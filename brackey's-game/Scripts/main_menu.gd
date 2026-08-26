@@ -4,6 +4,7 @@ extends Control
 @export var settings: Button
 @export var exit: Button
 
+@export var main_game: PackedScene
 
 
 # Called when the node enters the scene tree for the first time.
@@ -14,7 +15,7 @@ func _ready() -> void:
 	
 
 func _on_start_button_pressed() -> void:
-	pass 
+	pass
 	
 func _on_settings_button_pressed() -> void:
 	pass

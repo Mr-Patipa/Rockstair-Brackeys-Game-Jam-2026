@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dlu6sk2bkuhjb" path="res://Scripts/main_menu.gd" id="1_2v2qq"]
 [ext_resource type="PackedScene" uid="uid://c53pwb5sk4s4e" path="res://Scenes/BaseGameScenes/MainGame.tscn" id="2_bmia4"]
 
-[node name="MainMenu" type="Control" unique_id=1439119883 node_paths=PackedStringArray("credits_button")]
+[node name="MainMenu" type="Control" unique_id=1439119883 node_paths=PackedStringArray("start_button", "settings_button", "credits_button", "exit_button")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,7 +11,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_2v2qq")
+start_button = NodePath("VBoxContainer2/VBoxContainer/StartButton")
+settings_button = NodePath("VBoxContainer2/VBoxContainer/SettingsButton")
 credits_button = NodePath("VBoxContainer2/VBoxContainer/CreditsButton")
+exit_button = NodePath("VBoxContainer2/VBoxContainer/ExitButton")
 main_game = ExtResource("2_bmia4")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=2079394179]

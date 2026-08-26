@@ -2,8 +2,9 @@ extends Control
 
 @export var start_button: Button
 @export var settings_button: Button
-@export var exit_button: Button
 @export var credits_button: Button
+@export var exit_button: Button
+
 
 @export var main_game: PackedScene
 

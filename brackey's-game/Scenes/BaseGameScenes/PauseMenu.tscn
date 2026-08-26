@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bkc1y0nlp3goc"]
+
+[node name="PauseMenu" type="Control" unique_id=461662291]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=1814267327]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -76.0
+offset_top = -64.0
+offset_right = 76.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+
+[node name="Label" type="Label" parent="VBoxContainer2" unique_id=1653176944]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "PAUSED"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2" unique_id=586818277]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="ContinueButton" type="Button" parent="VBoxContainer2/VBoxContainer" unique_id=1808412353]
+layout_mode = 2
+text = "CONTINUE BUTTON"
+
+[node name="SettingsButton" type="Button" parent="VBoxContainer2/VBoxContainer" unique_id=1501944690]
+layout_mode = 2
+text = "SETTINGS BUTTON"
+
+[node name="ExitButton" type="Button" parent="VBoxContainer2/VBoxContainer" unique_id=1406391687]
+layout_mode = 2
+text = "QUIT BUTTON"

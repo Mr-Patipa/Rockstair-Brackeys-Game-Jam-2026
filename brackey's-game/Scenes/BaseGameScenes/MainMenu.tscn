@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://cwjxyhm8sjs5f"]
 
 [ext_resource type="Script" uid="uid://dlu6sk2bkuhjb" path="res://Scripts/main_menu.gd" id="1_2v2qq"]
-[ext_resource type="PackedScene" uid="uid://c53pwb5sk4s4e" path="res://Scenes/BaseGameScenes/MainGame.tscn" id="2_bmia4"]
+[ext_resource type="PackedScene" uid="uid://cyttakvvvr38w" path="res://Scenes/OverlayScenes/Settings.tscn" id="2_2v2qq"]
+[ext_resource type="PackedScene" uid="uid://cvhb4hw1poa8p" path="res://Scenes/OverlayScenes/Credits.tscn" id="3_bmia4"]
 
-[node name="MainMenu" type="Control" unique_id=1439119883 node_paths=PackedStringArray("start_button", "settings_button", "credits_button", "exit_button")]
+[node name="MainMenu" type="Control" unique_id=1439119883]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,11 +12,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_2v2qq")
-start_button = NodePath("VBoxContainer2/VBoxContainer/StartButton")
-settings_button = NodePath("VBoxContainer2/VBoxContainer/SettingsButton")
-credits_button = NodePath("VBoxContainer2/VBoxContainer/CreditsButton")
-exit_button = NodePath("VBoxContainer2/VBoxContainer/ExitButton")
-main_game = ExtResource("2_bmia4")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=2079394179]
 layout_mode = 1
@@ -57,3 +53,11 @@ text = "CREDITS BUTTON"
 [node name="ExitButton" type="Button" parent="VBoxContainer2/VBoxContainer" unique_id=1844401125]
 layout_mode = 2
 text = "QUIT BUTTON"
+
+[node name="Settings" parent="." unique_id=828987176 instance=ExtResource("2_2v2qq")]
+visible = false
+layout_mode = 1
+
+[node name="Credits" parent="." unique_id=144372214 instance=ExtResource("3_bmia4")]
+visible = false
+layout_mode = 1

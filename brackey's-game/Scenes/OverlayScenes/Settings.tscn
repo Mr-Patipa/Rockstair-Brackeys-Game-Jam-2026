@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cyttakvvvr38w"]
 
-[ext_resource type="Script" uid="uid://c4w7pgdrpul2p" path="res://Scenes/BaseGameScenes/settings.gd" id="1_covvd"]
+[ext_resource type="Script" uid="uid://c4w7pgdrpul2p" path="res://Scripts/settings.gd" id="1_covvd"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mr0gp"]
 bg_color = Color(0.40233153, 0.4023316, 0.4023314, 1)
@@ -9,11 +9,11 @@ corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 expand_margin_left = 24.0
-expand_margin_top = 8.0
+expand_margin_top = 24.0
 expand_margin_right = 24.0
-expand_margin_bottom = 24.0
+expand_margin_bottom = 40.0
 
-[node name="Settings" type="Control" unique_id=828987176 node_paths=PackedStringArray("master_h_slider", "music_h_slider", "sfx_h_slider", "resolution_option")]
+[node name="Settings" type="Control" unique_id=828987176 node_paths=PackedStringArray("master_h_slider", "music_h_slider", "sfx_h_slider", "close_button")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -24,29 +24,44 @@ script = ExtResource("1_covvd")
 master_h_slider = NodePath("Panel/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer/Master_HSlider")
 music_h_slider = NodePath("Panel/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer2/Music_HSlider")
 sfx_h_slider = NodePath("Panel/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer3/SFX_HSlider")
-resolution_option = NodePath("Panel/VBoxContainer2/DISPLAY/MarginContainer/VBoxContainer/HBoxContainer/OptionButton")
+close_button = NodePath("Panel/VBoxContainer2/MarginContainer/Close")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=306467911]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.05882353)
 
 [node name="Panel" type="Panel" parent="." unique_id=310904691]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3515625
+anchor_top = 0.34270832
+anchor_right = 0.6484375
+anchor_bottom = 0.65729165
+offset_top = 1.5258789e-05
+offset_bottom = -1.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mr0gp")
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Panel" unique_id=648004674]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -190.0
-offset_top = -169.5
-offset_right = 190.0
-offset_bottom = 169.5
+offset_left = -176.0
+offset_top = -101.0
+offset_right = 176.0
+offset_bottom = 101.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_mr0gp")
-
-[node name="VBoxContainer2" type="VBoxContainer" parent="Panel" unique_id=648004674]
-layout_mode = 0
-offset_left = 24.0
-offset_top = 24.0
-offset_right = 356.0
-offset_bottom = 315.0
 theme_override_constants/separation = 16
 
 [node name="Label" type="Label" parent="Panel/VBoxContainer2" unique_id=94359861]
@@ -132,41 +147,13 @@ step = 0.05
 value = 0.7
 ticks_on_borders = true
 
-[node name="DISPLAY" type="VBoxContainer" parent="Panel/VBoxContainer2" unique_id=1489359086]
+[node name="MarginContainer" type="MarginContainer" parent="Panel/VBoxContainer2" unique_id=1187838335]
 layout_mode = 2
-theme_override_constants/separation = 8
+theme_override_constants/margin_left = 104
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 104
 
-[node name="Display" type="Label" parent="Panel/VBoxContainer2/DISPLAY" unique_id=1076615859]
+[node name="Close" type="Button" parent="Panel/VBoxContainer2/MarginContainer" unique_id=1768261019]
+custom_minimum_size = Vector2(24, 32)
 layout_mode = 2
-theme_override_font_sizes/font_size = 24
-text = "Display"
-
-[node name="MarginContainer" type="MarginContainer" parent="Panel/VBoxContainer2/DISPLAY" unique_id=1915918804]
-layout_mode = 2
-theme_override_constants/margin_left = 8
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel/VBoxContainer2/DISPLAY/MarginContainer" unique_id=1282775374]
-layout_mode = 2
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer2/DISPLAY/MarginContainer/VBoxContainer" unique_id=1488810870]
-layout_mode = 2
-theme_override_constants/separation = 24
-alignment = 1
-
-[node name="Master" type="Label" parent="Panel/VBoxContainer2/DISPLAY/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1509021088]
-custom_minimum_size = Vector2(120, 0)
-layout_mode = 2
-text = "Resolution"
-vertical_alignment = 1
-
-[node name="OptionButton" type="OptionButton" parent="Panel/VBoxContainer2/DISPLAY/MarginContainer/VBoxContainer/HBoxContainer" unique_id=793153661]
-custom_minimum_size = Vector2(200, 0)
-layout_mode = 2
-selected = 2
-item_count = 3
-popup/item_0/text = "1920x1080"
-popup/item_0/id = 0
-popup/item_1/text = "1600x900"
-popup/item_1/id = 1
-popup/item_2/text = "1280x720"
-popup/item_2/id = 2
+text = "Close"

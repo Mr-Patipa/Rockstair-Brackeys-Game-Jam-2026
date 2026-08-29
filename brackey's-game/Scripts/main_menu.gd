@@ -1,12 +1,12 @@
 extends Control
 
-@export var start_button: Button
-@export var settings_button: Button
-@export var credits_button: Button
-@export var exit_button: Button
+@onready var start_button: Button = $VBoxContainer2/VBoxContainer/StartButton
+@onready var settings_button: Button = $VBoxContainer2/VBoxContainer/SettingsButton
+@onready var credits_button: Button = $VBoxContainer2/VBoxContainer/CreditsButton
+@onready var exit_button: Button = $VBoxContainer2/VBoxContainer/ExitButton
+@onready var settings_overlay: Control = $Settings
+@onready var credits_overlay: Control = $Credits
 
-
-@export var main_game: PackedScene
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -20,10 +20,10 @@ func _on_start_button_pressed() -> void:
 	pass
 	
 func _on_settings_button_pressed() -> void:
-	pass
+	settings_overlay.visible = not settings_overlay.visible
 
 func _on_credits_button_pressed() -> void:
-	pass
+	credits_overlay.visible = not credits_overlay.visible
 
 func _on_exit_button_pressed() -> void:
 	get_tree().quit()

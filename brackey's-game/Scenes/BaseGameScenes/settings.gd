@@ -15,7 +15,7 @@ var music_bus_id
 var sfx_bus_id
 
 @export_group("Display")
-@export var option_button: OptionButton
+@export var resolution_option: OptionButton
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -29,7 +29,7 @@ func _ready() -> void:
 	sfx_bus_id =AudioServer.get_bus_index(sfx_audio_bus)
 	
 	#DISPLAY
-	option_button.item_selected.connect(_on_screen_resolution_changed)
+	resolution_option.item_selected.connect(_on_screen_resolution_selected)
 
 
 func _on_master_volume_changed(value) -> void:
@@ -43,12 +43,11 @@ func _on_sfx_volume_changed(value) -> void:
 
 
 
-func _on_screen_resolution_changed(value) -> void:
-	print(value)
-	
-	if value == 0:
-		pass
-	elif value == 1:
-		pass
-	elif value == 2:
-		pass
+func _on_screen_resolution_selected(index) -> void:
+	match index:
+		0:
+			DisplayServer.window_set_size(Vector2i(1920, 1080))
+		1:
+			DisplayServer.window_set_size(Vector2i(1600, 900))
+		2:
+			DisplayServer.window_set_size(Vector2i(1280, 720))

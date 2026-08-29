@@ -21,6 +21,7 @@ var sfx_bus_id
 
 
 # Called when the node enters the scene tree for the first time.
+# Connect signals
 func _ready() -> void:
 	#VOLUME
 	master_h_slider.value_changed.connect(_on_master_volume_changed)
@@ -33,7 +34,7 @@ func _ready() -> void:
 	
 	close_button.pressed.connect(_on_close_button_pressed)
 
-
+# Adjust Bus volume
 func _on_master_volume_changed(value) -> void:
 	AudioServer.set_bus_volume_linear(master_bus_id, value)
 
@@ -42,6 +43,7 @@ func _on_music_volume_changed(value) -> void:
 	
 func _on_sfx_volume_changed(value) -> void:
 	AudioServer.set_bus_volume_linear(sfx_bus_id, value)
-	
+
+# Open/Close overlay
 func _on_close_button_pressed() -> void:
 	settings.visible = not settings.visible

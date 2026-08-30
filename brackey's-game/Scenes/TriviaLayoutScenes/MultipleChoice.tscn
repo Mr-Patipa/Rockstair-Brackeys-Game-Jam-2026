@@ -35,21 +35,3 @@ size_flags_horizontal = 4
 theme_override_constants/h_separation = 10
 theme_override_constants/v_separation = 10
 columns = 2
-
-[node name="OptionOneButton" type="Button" parent="VBoxContainer2/GridContainer" unique_id=1796826915]
-layout_mode = 2
-text = "OPTION ONE BUTTON
-"
-
-[node name="OptionTwoButton" type="Button" parent="VBoxContainer2/GridContainer" unique_id=683659656]
-layout_mode = 2
-text = "OPTION TWO BUTTON"
-
-[node name="OptionThreeButton" type="Button" parent="VBoxContainer2/GridContainer" unique_id=1242113981]
-layout_mode = 2
-text = "OPTION THREE BUTTON
-"
-
-[node name="OptionFourButton" type="Button" parent="VBoxContainer2/GridContainer" unique_id=2133930875]
-layout_mode = 2
-text = "OPTION FOUR BUTTON"

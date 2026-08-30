@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://byytvnd5yknhr"]
+
+[node name="OptionButton" type="Button" unique_id=1875838216]
+offset_left = 551.0
+offset_top = 403.0
+offset_right = 729.0
+offset_bottom = 434.0
+text = "This is Something"

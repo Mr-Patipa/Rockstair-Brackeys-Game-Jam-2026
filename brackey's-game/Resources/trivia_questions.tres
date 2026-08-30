@@ -21,7 +21,24 @@ question = "Is the earth flat?"
 AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_bmia4"), SubResource("Resource_yfgks")])
 metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
 
+[sub_resource type="Resource" id="Resource_23hyt"]
+script = ExtResource("2_ndgcf")
+AnswerText = "Yes"
+IsTrue = true
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_7fcjw"]
+script = ExtResource("2_ndgcf")
+AnswerText = "No"
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_5c1vb"]
+script = ExtResource("1_fypbb")
+question = "Are aliens real?"
+AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_23hyt"), SubResource("Resource_7fcjw")])
+metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
+
 [resource]
 script = ExtResource("2_p14uv")
-Questions = Array[ExtResource("1_fypbb")]([SubResource("Resource_4a5p6")])
+Questions = Array[ExtResource("1_fypbb")]([SubResource("Resource_4a5p6"), SubResource("Resource_5c1vb")])
 metadata/_custom_type_script = "uid://dad7naum5txpl"

@@ -14,3 +14,6 @@ func next_question():
 func add_score(amount):
 	score += amount
 	
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("ExitGame"):
+		get_tree().quit()

@@ -5,6 +5,8 @@ extends Control
 @export var OptionsBtn : PackedScene
 @export var Grid : GridContainer
 @export var QuestionLabel : Label
+@export var QuestionScreen : Control
+@export var EndScreen : Control
 
 var CurrentQuestion : int = 0 : 
 	set(value):
@@ -33,6 +35,9 @@ func Show_Question_Answers() -> void:
 func Check_Status(answer) -> void:
 	print(answer)
 	
-	if CurrentQuestion + 1 != QuestionList.Questions.size():
+	if CurrentQuestion + 1 <= QuestionList.Questions.size() - 1:
 		CurrentQuestion += 1
 	
+	else:
+		QuestionScreen.visible = false
+		EndScreen.visible = true

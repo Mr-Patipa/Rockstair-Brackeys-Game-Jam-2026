@@ -5,8 +5,9 @@
 [ext_resource type="Resource" uid="uid://d4h16y8ac2ia2" path="res://Resources/trivia_questions.tres" id="2_5c1vb"]
 [ext_resource type="PackedScene" uid="uid://dfti0s8i3sw4l" path="res://Scenes/TriviaLayoutScenes/MultipleChoice.tscn" id="2_d7xm0"]
 [ext_resource type="PackedScene" uid="uid://byytvnd5yknhr" path="res://Scenes/Assets/option_button.tscn" id="2_vqjxk"]
+[ext_resource type="PackedScene" uid="uid://b3jbbxj128joe" path="res://Scenes/BaseGameScenes/end_screen.tscn" id="6_23hyt"]
 
-[node name="MainGame" type="Control" unique_id=2077785845 node_paths=PackedStringArray("Grid", "QuestionLabel")]
+[node name="MainGame" type="Control" unique_id=2077785845 node_paths=PackedStringArray("Grid", "QuestionLabel", "QuestionScreen", "EndScreen")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -18,6 +19,8 @@ QuestionList = ExtResource("2_5c1vb")
 OptionsBtn = ExtResource("2_vqjxk")
 Grid = NodePath("MultipleChoice/VBoxContainer2/GridContainer")
 QuestionLabel = NodePath("MultipleChoice/VBoxContainer2/Label")
+QuestionScreen = NodePath("MultipleChoice")
+EndScreen = NodePath("EndScreen")
 
 [node name="Settings" parent="." unique_id=828987176 instance=ExtResource("1_aaj0j")]
 visible = false
@@ -25,6 +28,11 @@ z_index = 100
 layout_mode = 1
 
 [node name="MultipleChoice" parent="." unique_id=1727827449 instance=ExtResource("2_d7xm0")]
+z_index = 5
+layout_mode = 1
+
+[node name="EndScreen" parent="." unique_id=169754229 instance=ExtResource("6_23hyt")]
+visible = false
 layout_mode = 1
 
 [editable path="MultipleChoice"]

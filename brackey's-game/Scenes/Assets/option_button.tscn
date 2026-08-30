@@ -1,8 +1,32 @@
 [gd_scene format=3 uid="uid://byytvnd5yknhr"]
 
-[node name="OptionButton" type="Button" unique_id=1875838216]
-offset_left = 551.0
-offset_top = 403.0
-offset_right = 729.0
-offset_bottom = 434.0
-text = "This is Something"
+[ext_resource type="Texture2D" uid="uid://dg42me7t16d71" path="res://Art/BIG Button/Brackey choice ui.png" id="1_5rr6x"]
+[ext_resource type="Texture2D" uid="uid://dfspfbwpccu0u" path="res://Art/BIG Button/Brackey choice INTERACT.png" id="2_i6gvr"]
+
+[node name="OptionButton" type="TextureButton" unique_id=807665941]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -225.0
+offset_right = 400.0
+offset_bottom = 225.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("1_5rr6x")
+texture_hover = ExtResource("2_i6gvr")
+
+[node name="Label" type="Label" parent="." unique_id=1696983551]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+text = "Test"
+horizontal_alignment = 1
+vertical_alignment = 1

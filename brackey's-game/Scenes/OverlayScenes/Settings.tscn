@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://cyttakvvvr38w"]
 
 [ext_resource type="Script" uid="uid://c4w7pgdrpul2p" path="res://Scripts/settings.gd" id="1_covvd"]
-[ext_resource type="Script" uid="uid://8r1pfmfmdxpu" path="res://Scripts/slider_sfx.gd" id="2_bfkw7"]
-[ext_resource type="Script" uid="uid://c7aklhfnunr6i" path="res://Scripts/button_sfx.gd" id="2_c3oo7"]
+[ext_resource type="Script" uid="uid://8r1pfmfmdxpu" path="res://Scripts/AudioManager/slider_sfx.gd" id="2_bfkw7"]
+[ext_resource type="Script" uid="uid://c7aklhfnunr6i" path="res://Scripts/AudioManager/button_sfx.gd" id="2_c3oo7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mr0gp"]
 bg_color = Color(0.40233153, 0.4023316, 0.4023314, 1)

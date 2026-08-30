@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 GameManager="*uid://b3scu1s7tkieb"
 AudioManager="*uid://buqnjvs4t38ve"
+GlobalSignalBus="*uid://vsfw1d3l0oyr"
 
 [display]
 

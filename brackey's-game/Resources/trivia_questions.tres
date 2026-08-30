@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="QuestionsList" format=3 uid="uid://d4h16y8ac2ia2"]
+
+[ext_resource type="Script" uid="uid://dl1ri1hkio8sx" path="res://Resources/question_class.gd" id="1_fypbb"]
+[ext_resource type="Script" uid="uid://ceoa1j0j55pop" path="res://Resources/answer_class.gd" id="2_ndgcf"]
+[ext_resource type="Script" uid="uid://dad7naum5txpl" path="res://Resources/questions_list.gd" id="2_p14uv"]
+
+[sub_resource type="Resource" id="Resource_bmia4"]
+script = ExtResource("2_ndgcf")
+AnswerText = "Yes"
+IsTrue = true
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_yfgks"]
+script = ExtResource("2_ndgcf")
+AnswerText = "No"
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_4a5p6"]
+script = ExtResource("1_fypbb")
+question = "Is the earth flat?"
+AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_bmia4"), SubResource("Resource_yfgks")])
+metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
+
+[resource]
+script = ExtResource("2_p14uv")
+Questions = Array[ExtResource("1_fypbb")]([SubResource("Resource_4a5p6")])
+metadata/_custom_type_script = "uid://dad7naum5txpl"

@@ -27,8 +27,8 @@ func Show_Question_Answers() -> void:
 	QuestionLabel.text = QuestionList.Questions[CurrentQuestion].question
 	
 	for answer in QuestionList.Questions[CurrentQuestion].AnswerList:
-		var NewOptionBtn : Button = OptionsBtn.instantiate()
-		NewOptionBtn.text = answer.AnswerText
+		var NewOptionBtn : TextureButton = OptionsBtn.instantiate()
+		NewOptionBtn.get_node("Label").text = answer.AnswerText
 		NewOptionBtn.pressed.connect(answer.Check_Answers)
 		Grid.add_child(NewOptionBtn)
 

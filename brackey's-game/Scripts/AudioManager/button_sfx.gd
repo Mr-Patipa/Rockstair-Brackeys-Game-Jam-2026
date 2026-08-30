@@ -1,5 +1,5 @@
 class_name ButtonSFX
-extends Button
+extends BaseButton
 
 @export var play_hover_sound: bool = true
 @export var play_press_sound: bool = true

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dlu6sk2bkuhjb" path="res://Scripts/main_menu.gd" id="1_2v2qq"]
 [ext_resource type="PackedScene" uid="uid://cyttakvvvr38w" path="res://Scenes/OverlayScenes/Settings.tscn" id="2_2v2qq"]
+[ext_resource type="Script" uid="uid://c7aklhfnunr6i" path="res://Scripts/button_sfx.gd" id="2_yfgks"]
 [ext_resource type="PackedScene" uid="uid://cvhb4hw1poa8p" path="res://Scenes/OverlayScenes/Credits.tscn" id="3_bmia4"]
 
 [node name="MainMenu" type="Control" unique_id=1439119883]
@@ -41,18 +42,22 @@ theme_override_constants/separation = 10
 [node name="StartButton" type="Button" parent="VBoxContainer2/VBoxContainer" unique_id=1531679638]
 layout_mode = 2
 text = "START BUTTON"
+script = ExtResource("2_yfgks")
 
 [node name="SettingsButton" type="Button" parent="VBoxContainer2/VBoxContainer" unique_id=239649265]
 layout_mode = 2
 text = "SETTINGS BUTTON"
+script = ExtResource("2_yfgks")
 
 [node name="CreditsButton" type="Button" parent="VBoxContainer2/VBoxContainer" unique_id=551233266]
 layout_mode = 2
 text = "CREDITS BUTTON"
+script = ExtResource("2_yfgks")
 
 [node name="ExitButton" type="Button" parent="VBoxContainer2/VBoxContainer" unique_id=1844401125]
 layout_mode = 2
 text = "QUIT BUTTON"
+script = ExtResource("2_yfgks")
 
 [node name="Settings" parent="." unique_id=828987176 instance=ExtResource("2_2v2qq")]
 visible = false

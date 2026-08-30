@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://cyttakvvvr38w"]
 
 [ext_resource type="Script" uid="uid://c4w7pgdrpul2p" path="res://Scripts/settings.gd" id="1_covvd"]
+[ext_resource type="Script" uid="uid://8r1pfmfmdxpu" path="res://Scripts/slider_sfx.gd" id="2_bfkw7"]
+[ext_resource type="Script" uid="uid://c7aklhfnunr6i" path="res://Scripts/button_sfx.gd" id="2_c3oo7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mr0gp"]
 bg_color = Color(0.40233153, 0.4023316, 0.4023314, 1)
@@ -105,6 +107,7 @@ size_flags_vertical = 4
 max_value = 1.0
 step = 0.05
 value = 0.7
+script = ExtResource("2_bfkw7")
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="Panel/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer" unique_id=1448095425]
 layout_mode = 2
@@ -125,6 +128,7 @@ size_flags_vertical = 4
 max_value = 1.0
 step = 0.05
 value = 0.7
+script = ExtResource("2_bfkw7")
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="Panel/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer" unique_id=1059241095]
 layout_mode = 2
@@ -146,6 +150,7 @@ max_value = 1.0
 step = 0.05
 value = 0.7
 ticks_on_borders = true
+script = ExtResource("2_bfkw7")
 
 [node name="MarginContainer" type="MarginContainer" parent="Panel/VBoxContainer2" unique_id=1187838335]
 layout_mode = 2
@@ -157,3 +162,4 @@ theme_override_constants/margin_right = 104
 custom_minimum_size = Vector2(24, 32)
 layout_mode = 2
 text = "Close"
+script = ExtResource("2_c3oo7")

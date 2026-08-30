@@ -1,3 +1,14 @@
 [gd_scene format=3 uid="uid://buqnjvs4t38ve"]
 
+[ext_resource type="Script" uid="uid://d1o6suos5ixje" path="res://Scripts/audio_manager.gd" id="1_7axng"]
+
 [node name="AudioManager" type="Node" unique_id=1879894091]
+process_mode = 3
+script = ExtResource("1_7axng")
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=1994582450]
+bus = &"Music"
+
+[node name="UISoundPlayer" type="AudioStreamPlayer" parent="." unique_id=1884876050]
+max_polyphony = 8
+bus = &"SFX"

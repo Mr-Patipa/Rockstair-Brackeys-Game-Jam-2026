@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cvhb4hw1poa8p"]
 
 [ext_resource type="Script" uid="uid://dhgsne35genns" path="res://Scripts/credits.gd" id="1_1dx33"]
+[ext_resource type="Script" uid="uid://c7aklhfnunr6i" path="res://Scripts/button_sfx.gd" id="2_5ypx0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5ypx0"]
 bg_color = Color(0.40233153, 0.4023316, 0.4023314, 1)
@@ -124,3 +125,4 @@ theme_override_constants/margin_right = 104
 custom_minimum_size = Vector2(24, 32)
 layout_mode = 2
 text = "Close"
+script = ExtResource("2_5ypx0")

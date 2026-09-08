@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cwjxyhm8sjs5f"]
 
+[ext_resource type="Theme" uid="uid://spam7lnwgls4" path="res://Resources/Themes&StyleBox/UI.tres" id="1_2uw17"]
 [ext_resource type="Script" uid="uid://dlu6sk2bkuhjb" path="res://Scripts/main_menu.gd" id="1_2v2qq"]
 [ext_resource type="PackedScene" uid="uid://cyttakvvvr38w" path="res://Scenes/OverlayScenes/Settings.tscn" id="2_2v2qq"]
 [ext_resource type="Script" uid="uid://c7aklhfnunr6i" path="res://Scripts/AudioManager/button_sfx.gd" id="2_yfgks"]
@@ -12,6 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_2uw17")
 script = ExtResource("1_2v2qq")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=2079394179]
@@ -41,21 +43,25 @@ theme_override_constants/separation = 10
 
 [node name="StartButton" type="Button" parent="VBoxContainer2/VBoxContainer" unique_id=1531679638]
 layout_mode = 2
+theme = ExtResource("1_2uw17")
 text = "START BUTTON"
 script = ExtResource("2_yfgks")
 
 [node name="SettingsButton" type="Button" parent="VBoxContainer2/VBoxContainer" unique_id=239649265]
 layout_mode = 2
+theme = ExtResource("1_2uw17")
 text = "SETTINGS BUTTON"
 script = ExtResource("2_yfgks")
 
 [node name="CreditsButton" type="Button" parent="VBoxContainer2/VBoxContainer" unique_id=551233266]
 layout_mode = 2
+theme = ExtResource("1_2uw17")
 text = "CREDITS BUTTON"
 script = ExtResource("2_yfgks")
 
 [node name="ExitButton" type="Button" parent="VBoxContainer2/VBoxContainer" unique_id=1844401125]
 layout_mode = 2
+theme = ExtResource("1_2uw17")
 text = "QUIT BUTTON"
 script = ExtResource("2_yfgks")
 

@@ -1,0 +1,21 @@
+[gd_resource type="StyleBoxTexture" format=3 uid="uid://dbjly2ipmr7di"]
+
+[ext_resource type="Texture2D" uid="uid://t8wx4ak73kx3" path="res://Art/SMALL Button/brokey ui button for the settings and credits INTERACT.png" id="1_i8uet"]
+
+[resource]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 12.0
+texture = ExtResource("1_i8uet")
+texture_margin_left = 19.0
+texture_margin_top = 18.0
+texture_margin_right = 21.0
+texture_margin_bottom = 18.0
+expand_margin_left = 8.0
+expand_margin_top = 4.0
+expand_margin_right = 8.0
+expand_margin_bottom = 4.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(209, 152, 365, 120)

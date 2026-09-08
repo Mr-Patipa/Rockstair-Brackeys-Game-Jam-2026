@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://bkc1y0nlp3goc"]
 
+[sub_resource type="Theme" id="Theme_3y7cg"]
+default_font_size = 0
+
 [node name="PauseMenu" type="Control" unique_id=461662291]
 layout_mode = 3
 anchors_preset = 15
@@ -35,6 +38,7 @@ theme_override_constants/separation = 10
 
 [node name="ContinueButton" type="Button" parent="VBoxContainer2/VBoxContainer" unique_id=1808412353]
 layout_mode = 2
+theme = SubResource("Theme_3y7cg")
 text = "CONTINUE BUTTON"
 
 [node name="SettingsButton" type="Button" parent="VBoxContainer2/VBoxContainer" unique_id=1501944690]

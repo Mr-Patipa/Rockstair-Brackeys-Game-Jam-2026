@@ -1,12 +1,12 @@
 extends Node
 
-const BGM_TRACK = preload("res://Sounds/Music/mus_main_theme.ogg")
+const BGM_TRACK = preload("res://Resources/Sounds/Music/mus_main_theme.ogg")
 
-const SFX_CORRECT = preload("res://Sounds/SFX/sfx_correct.wav")
-const SFX_CURTAINS_TRANSITION = preload("res://Sounds/SFX/sfx_curtains_transission.wav")
-const SFX_INCORRECT = preload("res://Sounds/SFX/sfx_incorrect.wav")
-const SFX_UI_HOVER = preload("res://Sounds/SFX/sfx_ui_hover.wav")
-const SFX_UI_SELECT = preload("res://Sounds/SFX/sfx_ui_select.wav")
+const SFX_CORRECT = preload("res://Resources/Sounds/SFX/sfx_correct.wav")
+const SFX_CURTAINS_TRANSITION = preload("res://Resources/Sounds/SFX/sfx_curtains_transission.wav")
+const SFX_INCORRECT = preload("res://Resources/Sounds/SFX/sfx_incorrect.wav")
+const SFX_UI_HOVER = preload("res://Resources/Sounds/SFX/sfx_ui_hover.wav")
+const SFX_UI_SELECT = preload("res://Resources/Sounds/SFX/sfx_ui_select.wav")
 
 @onready var music_player: AudioStreamPlayer = $MusicPlayer
 @onready var ui_player: AudioStreamPlayer = $UISoundPlayer

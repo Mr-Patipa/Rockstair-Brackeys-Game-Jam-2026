@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dnai8gsubyu16"]
+
+[ext_resource type="VideoStream" uid="uid://dd6f6wdang5gp" path="res://Art/Background/cloudmovingloop.ogv" id="1_7xkwl"]
+
+[node name="Background01" type="VideoStreamPlayer" unique_id=615502337]
+offset_right = 1920.0
+offset_bottom = 1080.0
+stream = ExtResource("1_7xkwl")

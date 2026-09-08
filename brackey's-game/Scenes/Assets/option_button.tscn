@@ -1,32 +1,19 @@
 [gd_scene format=3 uid="uid://byytvnd5yknhr"]
 
-[ext_resource type="Texture2D" uid="uid://dg42me7t16d71" path="res://Art/BIG Button/Brackey choice ui.png" id="1_5rr6x"]
-[ext_resource type="Texture2D" uid="uid://dfspfbwpccu0u" path="res://Art/BIG Button/Brackey choice INTERACT.png" id="2_i6gvr"]
+[ext_resource type="Theme" uid="uid://spam7lnwgls4" path="res://Resources/Themes&StyleBox/UI.tres" id="1_hrhtu"]
 
-[node name="OptionButton" type="TextureButton" unique_id=807665941]
+[node name="OptionButton" type="Button" unique_id=1591676250]
+custom_minimum_size = Vector2(240, 50)
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -400.0
-offset_top = -225.0
-offset_right = 400.0
-offset_bottom = 225.0
+offset_left = -8.0
+offset_top = -10.0
+offset_right = 8.0
+offset_bottom = 10.0
 grow_horizontal = 2
 grow_vertical = 2
-texture_normal = ExtResource("1_5rr6x")
-texture_hover = ExtResource("2_i6gvr")
-
-[node name="Label" type="Label" parent="." unique_id=1696983551]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 48
-text = "Test"
-horizontal_alignment = 1
-vertical_alignment = 1
+theme = ExtResource("1_hrhtu")
+text = "test"

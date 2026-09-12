@@ -4,17 +4,6 @@
 [ext_resource type="Script" uid="uid://8r1pfmfmdxpu" path="res://Scripts/AudioManager/slider_sfx.gd" id="2_bfkw7"]
 [ext_resource type="Script" uid="uid://c7aklhfnunr6i" path="res://Scripts/AudioManager/button_sfx.gd" id="2_c3oo7"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mr0gp"]
-bg_color = Color(0.40233153, 0.4023316, 0.4023314, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-expand_margin_left = 24.0
-expand_margin_top = 24.0
-expand_margin_right = 24.0
-expand_margin_bottom = 40.0
-
 [node name="Settings" type="Control" unique_id=828987176 node_paths=PackedStringArray("master_h_slider", "music_h_slider", "sfx_h_slider", "close_button")]
 layout_mode = 3
 anchors_preset = 15
@@ -23,10 +12,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_covvd")
-master_h_slider = NodePath("Panel/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer/Master_HSlider")
-music_h_slider = NodePath("Panel/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer2/Music_HSlider")
-sfx_h_slider = NodePath("Panel/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer3/SFX_HSlider")
-close_button = NodePath("Panel/VBoxContainer2/MarginContainer/Close")
+master_h_slider = NodePath("PanelContainer/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer/Master_HSlider")
+music_h_slider = NodePath("PanelContainer/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer2/Music_HSlider")
+sfx_h_slider = NodePath("PanelContainer/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer3/SFX_HSlider")
+close_button = NodePath("PanelContainer/VBoxContainer2/MarginContainer/Close")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=306467911]
 layout_mode = 1
@@ -37,69 +26,55 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.05882353)
 
-[node name="Panel" type="Panel" parent="." unique_id=310904691]
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=565632390]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.3515625
 anchor_top = 0.34270832
 anchor_right = 0.6484375
 anchor_bottom = 0.65729165
-offset_top = 1.5258789e-05
 offset_bottom = -1.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_mr0gp")
 metadata/_edit_use_anchors_ = true
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="Panel" unique_id=648004674]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -176.0
-offset_top = -101.0
-offset_right = 176.0
-offset_bottom = 101.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="VBoxContainer2" type="VBoxContainer" parent="PanelContainer" unique_id=648004674]
+layout_mode = 2
 theme_override_constants/separation = 16
 
-[node name="Label" type="Label" parent="Panel/VBoxContainer2" unique_id=94359861]
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer2" unique_id=94359861]
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
 text = "SETTINGS"
 horizontal_alignment = 1
 
-[node name="VOLUME" type="VBoxContainer" parent="Panel/VBoxContainer2" unique_id=832759968]
+[node name="VOLUME" type="VBoxContainer" parent="PanelContainer/VBoxContainer2" unique_id=832759968]
 layout_mode = 2
 theme_override_constants/separation = 8
 
-[node name="Volume" type="Label" parent="Panel/VBoxContainer2/VOLUME" unique_id=2014521870]
+[node name="Volume" type="Label" parent="PanelContainer/VBoxContainer2/VOLUME" unique_id=2014521870]
 layout_mode = 2
-theme_override_font_sizes/font_size = 24
 text = "Volume"
 
-[node name="Volume_MarginContainer" type="MarginContainer" parent="Panel/VBoxContainer2/VOLUME" unique_id=1258464840]
+[node name="Volume_MarginContainer" type="MarginContainer" parent="PanelContainer/VBoxContainer2/VOLUME" unique_id=1258464840]
 layout_mode = 2
 theme_override_constants/margin_left = 8
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel/VBoxContainer2/VOLUME/Volume_MarginContainer" unique_id=648310123]
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/VBoxContainer2/VOLUME/Volume_MarginContainer" unique_id=648310123]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer" unique_id=440420285]
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer" unique_id=440420285]
 layout_mode = 2
 theme_override_constants/separation = 24
 alignment = 1
 
-[node name="Master" type="Label" parent="Panel/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer" unique_id=1493089543]
+[node name="Master" type="Label" parent="PanelContainer/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer" unique_id=1493089543]
 custom_minimum_size = Vector2(120, 0)
 layout_mode = 2
 text = "Master"
 vertical_alignment = 1
 
-[node name="Master_HSlider" type="HSlider" parent="Panel/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer" unique_id=1313487012]
+[node name="Master_HSlider" type="HSlider" parent="PanelContainer/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer" unique_id=1313487012]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -109,18 +84,18 @@ step = 0.05
 value = 0.7
 script = ExtResource("2_bfkw7")
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer" unique_id=1448095425]
+[node name="HBoxContainer2" type="HBoxContainer" parent="PanelContainer/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer" unique_id=1448095425]
 layout_mode = 2
 theme_override_constants/separation = 24
 alignment = 1
 
-[node name="Music" type="Label" parent="Panel/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer2" unique_id=417726123]
+[node name="Music" type="Label" parent="PanelContainer/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer2" unique_id=417726123]
 custom_minimum_size = Vector2(120, 0)
 layout_mode = 2
 text = "Music"
 vertical_alignment = 1
 
-[node name="Music_HSlider" type="HSlider" parent="Panel/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer2" unique_id=95395444]
+[node name="Music_HSlider" type="HSlider" parent="PanelContainer/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer2" unique_id=95395444]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -130,18 +105,18 @@ step = 0.05
 value = 0.7
 script = ExtResource("2_bfkw7")
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="Panel/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer" unique_id=1059241095]
+[node name="HBoxContainer3" type="HBoxContainer" parent="PanelContainer/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer" unique_id=1059241095]
 layout_mode = 2
 theme_override_constants/separation = 24
 alignment = 1
 
-[node name="SFX" type="Label" parent="Panel/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer3" unique_id=1308247573]
+[node name="SFX" type="Label" parent="PanelContainer/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer3" unique_id=1308247573]
 custom_minimum_size = Vector2(120, 0)
 layout_mode = 2
-text = "Sound Effects"
+text = "SFX"
 vertical_alignment = 1
 
-[node name="SFX_HSlider" type="HSlider" parent="Panel/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer3" unique_id=1514325315]
+[node name="SFX_HSlider" type="HSlider" parent="PanelContainer/VBoxContainer2/VOLUME/Volume_MarginContainer/VBoxContainer/HBoxContainer3" unique_id=1514325315]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -152,13 +127,13 @@ value = 0.7
 ticks_on_borders = true
 script = ExtResource("2_bfkw7")
 
-[node name="MarginContainer" type="MarginContainer" parent="Panel/VBoxContainer2" unique_id=1187838335]
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/VBoxContainer2" unique_id=1187838335]
 layout_mode = 2
 theme_override_constants/margin_left = 104
 theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 104
 
-[node name="Close" type="Button" parent="Panel/VBoxContainer2/MarginContainer" unique_id=1768261019]
+[node name="Close" type="Button" parent="PanelContainer/VBoxContainer2/MarginContainer" unique_id=1768261019]
 custom_minimum_size = Vector2(24, 32)
 layout_mode = 2
 text = "Close"

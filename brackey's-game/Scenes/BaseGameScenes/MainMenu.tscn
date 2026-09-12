@@ -70,7 +70,7 @@ custom_minimum_size = Vector2(700, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 theme = ExtResource("1_2uw17")
-text = "START BUTTON"
+text = "START"
 script = ExtResource("2_yfgks")
 
 [node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer" unique_id=997171411]
@@ -82,7 +82,7 @@ custom_minimum_size = Vector2(700, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 theme = ExtResource("1_2uw17")
-text = "SETTINGS BUTTON"
+text = "SETTINGS"
 script = ExtResource("2_yfgks")
 
 [node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer" unique_id=1807315633]
@@ -94,7 +94,7 @@ custom_minimum_size = Vector2(700, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 theme = ExtResource("1_2uw17")
-text = "CREDITS BUTTON"
+text = "CREDITS"
 script = ExtResource("2_yfgks")
 
 [node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer" unique_id=1512454586]
@@ -106,7 +106,7 @@ custom_minimum_size = Vector2(700, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 theme = ExtResource("1_2uw17")
-text = "QUIT BUTTON"
+text = "QUIT"
 script = ExtResource("2_yfgks")
 
 [node name="Settings" parent="." unique_id=828987176 instance=ExtResource("2_2v2qq")]

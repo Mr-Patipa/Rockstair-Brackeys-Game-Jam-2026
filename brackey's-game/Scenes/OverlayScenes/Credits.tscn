@@ -1,18 +1,8 @@
 [gd_scene format=3 uid="uid://cvhb4hw1poa8p"]
 
 [ext_resource type="Script" uid="uid://dhgsne35genns" path="res://Scripts/credits.gd" id="1_1dx33"]
+[ext_resource type="Theme" uid="uid://spam7lnwgls4" path="res://Resources/Themes&StyleBox/UI.tres" id="1_22fip"]
 [ext_resource type="Script" uid="uid://c7aklhfnunr6i" path="res://Scripts/AudioManager/button_sfx.gd" id="2_5ypx0"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5ypx0"]
-bg_color = Color(0.40233153, 0.4023316, 0.4023314, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-expand_margin_left = 24.0
-expand_margin_top = 24.0
-expand_margin_right = 24.0
-expand_margin_bottom = 40.0
 
 [node name="Credits" type="Control" unique_id=144372214 node_paths=PackedStringArray("close_button")]
 layout_mode = 3
@@ -21,8 +11,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_22fip")
 script = ExtResource("1_1dx33")
-close_button = NodePath("Panel2/VBoxContainer2/MarginContainer/Close")
+close_button = NodePath("PanelContainer/VBoxContainer2/MarginContainer/Close")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1783599823]
 layout_mode = 1
@@ -33,95 +24,91 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.05882353)
 
-[node name="Panel2" type="Panel" parent="." unique_id=1399302641]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.3515625
-anchor_top = 0.34270832
-anchor_right = 0.6484375
-anchor_bottom = 0.65729165
-offset_top = 1.5258789e-05
-offset_bottom = -1.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_5ypx0")
-metadata/_edit_use_anchors_ = true
-
-[node name="VBoxContainer2" type="VBoxContainer" parent="Panel2" unique_id=328594666]
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=270693223]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -176.0
-offset_top = -101.0
-offset_right = 176.0
-offset_bottom = 101.0
+offset_left = -174.0
+offset_top = -123.5
+offset_right = 228.0
+offset_bottom = 123.5
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="PanelContainer" unique_id=328594666]
+layout_mode = 2
 theme_override_constants/separation = 16
 
-[node name="Label" type="Label" parent="Panel2/VBoxContainer2" unique_id=1878118323]
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer2" unique_id=1878118323]
 layout_mode = 2
-theme_override_font_sizes/font_size = 48
+theme = ExtResource("1_22fip")
+theme_type_variation = &"HeaderLarge"
 text = "CREDITS"
 horizontal_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel2/VBoxContainer2" unique_id=716335563]
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer2" unique_id=716335563]
 layout_mode = 2
 theme_override_constants/separation = 32
 alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel2/VBoxContainer2/HBoxContainer" unique_id=1490620588]
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/VBoxContainer2/HBoxContainer" unique_id=1490620588]
 layout_mode = 2
 theme_override_constants/separation = 8
 
-[node name="Label" type="Label" parent="Panel2/VBoxContainer2/HBoxContainer/VBoxContainer" unique_id=1195610075]
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer2/HBoxContainer/VBoxContainer" unique_id=1195610075]
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme = ExtResource("1_22fip")
+theme_type_variation = &"HeaderMedium"
 text = "Questions"
 
-[node name="Label2" type="Label" parent="Panel2/VBoxContainer2/HBoxContainer/VBoxContainer" unique_id=559178640]
+[node name="Label2" type="Label" parent="PanelContainer/VBoxContainer2/HBoxContainer/VBoxContainer" unique_id=559178640]
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme = ExtResource("1_22fip")
+theme_type_variation = &"HeaderMedium"
 text = "Programming"
 
-[node name="Label3" type="Label" parent="Panel2/VBoxContainer2/HBoxContainer/VBoxContainer" unique_id=393467064]
+[node name="Label3" type="Label" parent="PanelContainer/VBoxContainer2/HBoxContainer/VBoxContainer" unique_id=393467064]
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme = ExtResource("1_22fip")
+theme_type_variation = &"HeaderMedium"
 text = "Art"
 
-[node name="VBoxContainer3" type="VBoxContainer" parent="Panel2/VBoxContainer2/HBoxContainer" unique_id=1676894770]
+[node name="VBoxContainer3" type="VBoxContainer" parent="PanelContainer/VBoxContainer2/HBoxContainer" unique_id=1676894770]
 layout_mode = 2
 theme_override_constants/separation = 8
 alignment = 2
 
-[node name="Label" type="Label" parent="Panel2/VBoxContainer2/HBoxContainer/VBoxContainer3" unique_id=677237908]
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer2/HBoxContainer/VBoxContainer3" unique_id=677237908]
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme = ExtResource("1_22fip")
+theme_type_variation = &"HeaderMedium"
 text = "Hue"
 horizontal_alignment = 2
 
-[node name="Label2" type="Label" parent="Panel2/VBoxContainer2/HBoxContainer/VBoxContainer3" unique_id=932367675]
+[node name="Label2" type="Label" parent="PanelContainer/VBoxContainer2/HBoxContainer/VBoxContainer3" unique_id=932367675]
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
-text = "Vorltzs, Plumtester"
+theme = ExtResource("1_22fip")
+theme_type_variation = &"HeaderMedium"
+text = "Vorltzs, Plumtester, Rust"
 horizontal_alignment = 2
 
-[node name="Label3" type="Label" parent="Panel2/VBoxContainer2/HBoxContainer/VBoxContainer3" unique_id=213289292]
+[node name="Label3" type="Label" parent="PanelContainer/VBoxContainer2/HBoxContainer/VBoxContainer3" unique_id=213289292]
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme = ExtResource("1_22fip")
+theme_type_variation = &"HeaderMedium"
 text = "Mika"
 horizontal_alignment = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="Panel2/VBoxContainer2" unique_id=482680134]
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/VBoxContainer2" unique_id=482680134]
 layout_mode = 2
 theme_override_constants/margin_left = 104
 theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 104
 
-[node name="Close" type="Button" parent="Panel2/VBoxContainer2/MarginContainer" unique_id=990863702]
+[node name="Close" type="Button" parent="PanelContainer/VBoxContainer2/MarginContainer" unique_id=990863702]
 custom_minimum_size = Vector2(24, 32)
 layout_mode = 2
 text = "Close"

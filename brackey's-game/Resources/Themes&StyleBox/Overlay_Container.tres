@@ -1,0 +1,11 @@
+[gd_resource type="StyleBoxTexture" format=3 uid="uid://cuwif133b1g5t"]
+
+[ext_resource type="Texture2D" uid="uid://bna6qhrjqysdg" path="res://Resources/Art/Overlay Backdrop/Brackey UI for credits or settings.png" id="1_oethc"]
+
+[resource]
+texture = ExtResource("1_oethc")
+expand_margin_left = 48.0
+expand_margin_top = 48.0
+expand_margin_right = 48.0
+expand_margin_bottom = 48.0
+region_rect = Rect2(566, 164, 455, 566)

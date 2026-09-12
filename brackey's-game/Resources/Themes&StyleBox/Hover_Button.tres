@@ -1,0 +1,12 @@
+[gd_resource type="StyleBoxTexture" format=3 uid="uid://bns2nqfnbv86"]
+
+[ext_resource type="Texture2D" uid="uid://bwgf4ljokixqn" path="res://Resources/Art/SMALL Button/brokey ui button for the settings and credits.png" id="1_4r8uo"]
+
+[resource]
+content_margin_left = 32.0
+content_margin_top = 32.0
+content_margin_right = 32.0
+content_margin_bottom = 32.0
+texture = ExtResource("1_4r8uo")
+region_rect = Rect2(225, 167, 332, 87)
+modulate_color = Color(1.1638972, 1.1638972, 1.1638972, 1)

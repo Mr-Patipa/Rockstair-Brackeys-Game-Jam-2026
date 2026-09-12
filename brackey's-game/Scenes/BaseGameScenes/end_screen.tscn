@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://b3jbbxj128joe"]
 
+[ext_resource type="PackedScene" uid="uid://dnai8gsubyu16" path="res://Scenes/BackgroundScenes/CloudMovingLoop.tscn" id="1_6bory"]
+
 [node name="EndScreen" type="Control" unique_id=169754229]
 layout_mode = 3
 anchors_preset = 15
@@ -7,6 +9,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Background01" parent="." unique_id=1911135473 instance=ExtResource("1_6bory")]
+layout_mode = 0
 
 [node name="Label" type="Label" parent="." unique_id=1179421533]
 layout_mode = 1

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://q12mrjq6iy6u"
-path="res://.godot/imported/Brackeys red curtain right.png-cf0187303695f27378fa24a610ca390a.ctex"
+uid="uid://hf5ky4n4d45n"
+path="res://.godot/imported/Brackey UI MultipleChoice all transparent.png-fa3de739785a9b160b24658e40e54233.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Curtains/Brackeys red curtain right.png"
-dest_files=["res://.godot/imported/Brackeys red curtain right.png-cf0187303695f27378fa24a610ca390a.ctex"]
+source_file="res://Resources/Art/UI Layout/Brackey UI MultipleChoice all transparent.png"
+dest_files=["res://.godot/imported/Brackey UI MultipleChoice all transparent.png-fa3de739785a9b160b24658e40e54233.ctex"]
 
 [params]
 

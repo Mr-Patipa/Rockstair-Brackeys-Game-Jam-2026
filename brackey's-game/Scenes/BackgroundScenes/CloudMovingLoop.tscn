@@ -1,8 +1,60 @@
 [gd_scene format=3 uid="uid://dnai8gsubyu16"]
 
-[ext_resource type="VideoStream" uid="uid://dd6f6wdang5gp" path="res://Art/Background/cloudmovingloop.ogv" id="1_7xkwl"]
+[ext_resource type="VideoStream" uid="uid://dd6f6wdang5gp" path="res://Resources/Art/Background/cloudmovingloop.ogv" id="1_7xkwl"]
+[ext_resource type="Texture2D" uid="uid://c88nwnmv1yjg6" path="res://Resources/Art/Background/Brackeys sky clouds v2 sky.png" id="2_ugyqy"]
+[ext_resource type="Texture2D" uid="uid://dsftwrx3gqr2w" path="res://Resources/Art/Background/Brackeys sky clouds v2.png" id="3_7efcw"]
+[ext_resource type="Texture2D" uid="uid://vjtghpfl8s42" path="res://Resources/Art/Background/Brackeys sky clouds v2 sun.png" id="4_4ubi6"]
 
 [node name="Background01" type="VideoStreamPlayer" unique_id=615502337]
 offset_right = 1920.0
 offset_bottom = 1080.0
 stream = ExtResource("1_7xkwl")
+
+[node name="Sky" type="TextureRect" parent="." unique_id=411765165]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -187.0
+offset_top = -105.0
+offset_right = 293.0
+offset_bottom = -105.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2000002, 1.2000002)
+texture = ExtResource("2_ugyqy")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="Cloud" type="TextureRect" parent="." unique_id=1918075344]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -187.0
+offset_top = -105.0
+offset_right = 293.0
+offset_bottom = -105.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2000002, 1.2000002)
+texture = ExtResource("3_7efcw")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="Sun" type="TextureRect" parent="." unique_id=497920234]
+self_modulate = Color(1, 1, 1, 0.58431375)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -222.0
+offset_top = -106.00001
+offset_right = -222.00012
+offset_bottom = -106.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2048961, 1.2048961)
+texture = ExtResource("4_4ubi6")
+expand_mode = 1
+stretch_mode = 3

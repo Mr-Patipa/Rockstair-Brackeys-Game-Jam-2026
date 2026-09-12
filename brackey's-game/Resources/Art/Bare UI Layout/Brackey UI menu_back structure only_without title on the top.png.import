@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxc16tcjp57f1"
-path="res://.godot/imported/brackeys false screen.png-8673c50b052ea4becf7e4816beca57ef.ctex"
+uid="uid://ciaxkwjwic86f"
+path="res://.godot/imported/Brackey UI menu_back structure only_without title on the top.png-6aa70e418eff528f7692ad4b12b2b7bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/brackeys false screen.png"
-dest_files=["res://.godot/imported/brackeys false screen.png-8673c50b052ea4becf7e4816beca57ef.ctex"]
+source_file="res://Resources/Art/Bare UI Layout/Brackey UI menu_back structure only_without title on the top.png"
+dest_files=["res://.godot/imported/Brackey UI menu_back structure only_without title on the top.png-6aa70e418eff528f7692ad4b12b2b7bb.ctex"]
 
 [params]
 

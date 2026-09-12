@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://t8wx4ak73kx3"
-path="res://.godot/imported/brokey ui button for the settings and credits INTERACT.png-d26a1cef47f33701f635450ebf8c8fd2.ctex"
+uid="uid://36bl8be1ct1o"
+path="res://.godot/imported/Brackey Multiple choice without the interactable components.png-3052d377e96ac6d4a777c313fb719dc2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/SMALL Button/brokey ui button for the settings and credits INTERACT.png"
-dest_files=["res://.godot/imported/brokey ui button for the settings and credits INTERACT.png-d26a1cef47f33701f635450ebf8c8fd2.ctex"]
+source_file="res://Resources/Art/Bare UI Layout/Brackey Multiple choice without the interactable components.png"
+dest_files=["res://.godot/imported/Brackey Multiple choice without the interactable components.png-3052d377e96ac6d4a777c313fb719dc2.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://36bl8be1ct1o"
-path="res://.godot/imported/Brackey Multiple choice without the interactable components.png-752f66321c77b64e98cd79967fbcaaf0.ctex"
+uid="uid://cjvihyr1xgnoo"
+path="res://.godot/imported/Brackey settings ui only.png-d2ade3e71139028f36e4c83fe79bcb28.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Bare UI Layout/Brackey Multiple choice without the interactable components.png"
-dest_files=["res://.godot/imported/Brackey Multiple choice without the interactable components.png-752f66321c77b64e98cd79967fbcaaf0.ctex"]
+source_file="res://Resources/Art/GEAR Settings/Brackey settings ui only.png"
+dest_files=["res://.godot/imported/Brackey settings ui only.png-d2ade3e71139028f36e4c83fe79bcb28.ctex"]
 
 [params]
 

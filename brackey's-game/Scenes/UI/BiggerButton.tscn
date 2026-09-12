@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cmq2ih61fs7bg"]
 
-[ext_resource type="Texture2D" uid="uid://dg42me7t16d71" path="res://Art/BIG Button/Brackey choice ui.png" id="1_ml370"]
-[ext_resource type="Texture2D" uid="uid://dfspfbwpccu0u" path="res://Art/BIG Button/Brackey choice INTERACT.png" id="2_grk42"]
+[ext_resource type="Texture2D" uid="uid://dg42me7t16d71" path="res://Resources/Art/BIG Button/Brackey choice ui.png" id="1_ml370"]
+[ext_resource type="Texture2D" uid="uid://dfspfbwpccu0u" path="res://Resources/Art/BIG Button/Brackey choice INTERACT.png" id="2_grk42"]
 [ext_resource type="Script" uid="uid://c7aklhfnunr6i" path="res://Scripts/AudioManager/button_sfx.gd" id="3_hl0ew"]
 
 [node name="BiggerButton" type="TextureButton" unique_id=1422226895]

@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cyttakvvvr38w" path="res://Scenes/OverlayScenes/Settings.tscn" id="2_2v2qq"]
 [ext_resource type="Script" uid="uid://c7aklhfnunr6i" path="res://Scripts/AudioManager/button_sfx.gd" id="2_yfgks"]
 [ext_resource type="PackedScene" uid="uid://cvhb4hw1poa8p" path="res://Scenes/OverlayScenes/Credits.tscn" id="3_bmia4"]
+[ext_resource type="PackedScene" uid="uid://dnai8gsubyu16" path="res://Scenes/BackgroundScenes/CloudMovingLoop.tscn" id="3_jqjab"]
 
 [node name="MainMenu" type="Control" unique_id=1439119883]
 layout_mode = 3
@@ -15,6 +16,9 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_2uw17")
 script = ExtResource("1_2v2qq")
+
+[node name="Background01" parent="." unique_id=615502337 instance=ExtResource("3_jqjab")]
+layout_mode = 0
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=2079394179]
 layout_mode = 1

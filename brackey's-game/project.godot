@@ -23,11 +23,8 @@ GlobalSignalBus="*uid://vsfw1d3l0oyr"
 
 [display]
 
-window/size/viewport_width=1280
-window/size/viewport_height=720
-window/size/mode=4
-window/size/resizable=false
-window/size/borderless=true
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 

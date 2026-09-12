@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cc8l1hiw7wnh6"
-path="res://.godot/imported/brackeys conclusion screen.png-0bd62d1283189d5a470c7a0e5fbe75e9.ctex"
+uid="uid://cwt5osyi1mrma"
+path="res://.godot/imported/Brackey UI TrueOrFalse all transparent.png-c98726ba72eb0fc5f5ebf6a090b1eb04.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/brackeys conclusion screen.png"
-dest_files=["res://.godot/imported/brackeys conclusion screen.png-0bd62d1283189d5a470c7a0e5fbe75e9.ctex"]
+source_file="res://Resources/Art/UI Layout/Brackey UI TrueOrFalse all transparent.png"
+dest_files=["res://.godot/imported/Brackey UI TrueOrFalse all transparent.png-c98726ba72eb0fc5f5ebf6a090b1eb04.ctex"]
 
 [params]
 

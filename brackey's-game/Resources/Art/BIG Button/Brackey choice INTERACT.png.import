@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcrf0feghke8b"
-path="res://.godot/imported/Brackey settings INTERACT.png-b8d2104bd0268632786ed83ac361d122.ctex"
+uid="uid://dfspfbwpccu0u"
+path="res://.godot/imported/Brackey choice INTERACT.png-f08f5f4a4d2cee2cf2898639791796ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/GEAR Settings/Brackey settings INTERACT.png"
-dest_files=["res://.godot/imported/Brackey settings INTERACT.png-b8d2104bd0268632786ed83ac361d122.ctex"]
+source_file="res://Resources/Art/BIG Button/Brackey choice INTERACT.png"
+dest_files=["res://.godot/imported/Brackey choice INTERACT.png-f08f5f4a4d2cee2cf2898639791796ee.ctex"]
 
 [params]
 

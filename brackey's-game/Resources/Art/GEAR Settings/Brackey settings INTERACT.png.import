@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://g7dnucc3wy1p"
-path="res://.godot/imported/Brackey banner only.png-dab6051fb5c0e4f1388fd6625c1394e8.ctex"
+uid="uid://dcrf0feghke8b"
+path="res://.godot/imported/Brackey settings INTERACT.png-037f0b7c1a7e67788542caa0dbaa5359.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Brackey banner only.png"
-dest_files=["res://.godot/imported/Brackey banner only.png-dab6051fb5c0e4f1388fd6625c1394e8.ctex"]
+source_file="res://Resources/Art/GEAR Settings/Brackey settings INTERACT.png"
+dest_files=["res://.godot/imported/Brackey settings INTERACT.png-037f0b7c1a7e67788542caa0dbaa5359.ctex"]
 
 [params]
 

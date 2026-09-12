@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwt5osyi1mrma"
-path="res://.godot/imported/Brackey UI TrueOrFalse all transparent.png-cee4ca06b8f002389a9018e362c255b8.ctex"
+uid="uid://dg42me7t16d71"
+path="res://.godot/imported/Brackey choice ui.png-b518bc40815e4b6c88c601e368638c20.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/UI Layout/Brackey UI TrueOrFalse all transparent.png"
-dest_files=["res://.godot/imported/Brackey UI TrueOrFalse all transparent.png-cee4ca06b8f002389a9018e362c255b8.ctex"]
+source_file="res://Resources/Art/BIG Button/Brackey choice ui.png"
+dest_files=["res://.godot/imported/Brackey choice ui.png-b518bc40815e4b6c88c601e368638c20.ctex"]
 
 [params]
 

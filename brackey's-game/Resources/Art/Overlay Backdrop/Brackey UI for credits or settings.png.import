@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ciaxkwjwic86f"
-path="res://.godot/imported/Brackey UI menu_back structure only_without title on the top.png-5d3097b0fa68bcc2989be751dea0de8c.ctex"
+uid="uid://bna6qhrjqysdg"
+path="res://.godot/imported/Brackey UI for credits or settings.png-c9a80c07938c9b429621a8f887fd0ee4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Bare UI Layout/Brackey UI menu_back structure only_without title on the top.png"
-dest_files=["res://.godot/imported/Brackey UI menu_back structure only_without title on the top.png-5d3097b0fa68bcc2989be751dea0de8c.ctex"]
+source_file="res://Resources/Art/Overlay Backdrop/Brackey UI for credits or settings.png"
+dest_files=["res://.godot/imported/Brackey UI for credits or settings.png-c9a80c07938c9b429621a8f887fd0ee4.ctex"]
 
 [params]
 

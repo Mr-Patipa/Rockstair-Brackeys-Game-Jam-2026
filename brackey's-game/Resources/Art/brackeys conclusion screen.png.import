@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwgf4ljokixqn"
-path="res://.godot/imported/brokey ui button for the settings and credits.png-6d482e7d6324a7226153ca14d0b11a25.ctex"
+uid="uid://cc8l1hiw7wnh6"
+path="res://.godot/imported/brackeys conclusion screen.png-1fb98612b2d5d466186ebf04de653304.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/SMALL Button/brokey ui button for the settings and credits.png"
-dest_files=["res://.godot/imported/brokey ui button for the settings and credits.png-6d482e7d6324a7226153ca14d0b11a25.ctex"]
+source_file="res://Resources/Art/brackeys conclusion screen.png"
+dest_files=["res://.godot/imported/brackeys conclusion screen.png-1fb98612b2d5d466186ebf04de653304.ctex"]
 
 [params]
 

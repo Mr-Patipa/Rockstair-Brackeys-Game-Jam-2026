@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://u86sy7am8ae"
-path="res://.godot/imported/brackeys true screen.png-c02f043df1751a04c66ac4d5ca3dfdf5.ctex"
+uid="uid://g7dnucc3wy1p"
+path="res://.godot/imported/Brackey banner only.png-d02ec8408a0cc4af886bb6b09e124bef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/brackeys true screen.png"
-dest_files=["res://.godot/imported/brackeys true screen.png-c02f043df1751a04c66ac4d5ca3dfdf5.ctex"]
+source_file="res://Resources/Art/Brackey banner only.png"
+dest_files=["res://.godot/imported/Brackey banner only.png-d02ec8408a0cc4af886bb6b09e124bef.ctex"]
 
 [params]
 

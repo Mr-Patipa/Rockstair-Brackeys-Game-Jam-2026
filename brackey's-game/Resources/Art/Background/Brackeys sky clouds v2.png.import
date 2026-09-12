@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nq3shusvpoep"
-path="res://.godot/imported/Brackey UI menu all_without title on the top.png-06690768fb9936329aa2ed0761f23916.ctex"
+uid="uid://dsftwrx3gqr2w"
+path="res://.godot/imported/Brackeys sky clouds v2.png-5adb69b78ee89036c1aee62ac45d4882.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/UI Layout/Brackey UI menu all_without title on the top.png"
-dest_files=["res://.godot/imported/Brackey UI menu all_without title on the top.png-06690768fb9936329aa2ed0761f23916.ctex"]
+source_file="res://Resources/Art/Background/Brackeys sky clouds v2.png"
+dest_files=["res://.godot/imported/Brackeys sky clouds v2.png-5adb69b78ee89036c1aee62ac45d4882.ctex"]
 
 [params]
 

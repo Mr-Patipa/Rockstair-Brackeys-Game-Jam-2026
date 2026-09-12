@@ -1,6 +1,6 @@
 [gd_resource type="StyleBoxTexture" format=3 uid="uid://dbjly2ipmr7di"]
 
-[ext_resource type="Texture2D" uid="uid://t8wx4ak73kx3" path="res://Art/SMALL Button/brokey ui button for the settings and credits INTERACT.png" id="1_i8uet"]
+[ext_resource type="Texture2D" uid="uid://t8wx4ak73kx3" path="res://Resources/Art/SMALL Button/brokey ui button for the settings and credits INTERACT.png" id="1_i8uet"]
 
 [resource]
 content_margin_left = 8.0

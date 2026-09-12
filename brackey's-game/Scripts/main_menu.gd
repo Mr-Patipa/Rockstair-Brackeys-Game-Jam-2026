@@ -1,9 +1,10 @@
 extends Control
 
-@onready var start_button: Button = $VBoxContainer2/VBoxContainer/StartButton
-@onready var settings_button: Button = $VBoxContainer2/VBoxContainer/SettingsButton
-@onready var credits_button: Button = $VBoxContainer2/VBoxContainer/CreditsButton
-@onready var exit_button: Button = $VBoxContainer2/VBoxContainer/ExitButton
+@export var start_button: ButtonSFX
+@export var settings_button: ButtonSFX
+@export var credits_button: ButtonSFX
+@export var exit_button: ButtonSFX
+
 @onready var settings_overlay: Control = $Settings
 @onready var credits_overlay: Control = $Credits
 

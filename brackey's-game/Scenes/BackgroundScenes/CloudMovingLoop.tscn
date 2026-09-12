@@ -1,14 +1,19 @@
 [gd_scene format=3 uid="uid://dnai8gsubyu16"]
 
-[ext_resource type="VideoStream" uid="uid://dd6f6wdang5gp" path="res://Resources/Art/Background/cloudmovingloop.ogv" id="1_7xkwl"]
 [ext_resource type="Texture2D" uid="uid://c88nwnmv1yjg6" path="res://Resources/Art/Background/Brackeys sky clouds v2 sky.png" id="2_ugyqy"]
+[ext_resource type="Shader" uid="uid://bcm0wxs441p1j" path="res://Resources/CloudMovingLoop.gdshader" id="3_4ubi6"]
 [ext_resource type="Texture2D" uid="uid://dsftwrx3gqr2w" path="res://Resources/Art/Background/Brackeys sky clouds v2.png" id="3_7efcw"]
 [ext_resource type="Texture2D" uid="uid://vjtghpfl8s42" path="res://Resources/Art/Background/Brackeys sky clouds v2 sun.png" id="4_4ubi6"]
 
-[node name="Background01" type="VideoStreamPlayer" unique_id=615502337]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4ubi6"]
+shader = ExtResource("3_4ubi6")
+
+[node name="Background01" type="Control" unique_id=1911135473]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
-stream = ExtResource("1_7xkwl")
 
 [node name="Sky" type="TextureRect" parent="." unique_id=411765165]
 layout_mode = 1
@@ -27,6 +32,8 @@ expand_mode = 1
 stretch_mode = 3
 
 [node name="Cloud" type="TextureRect" parent="." unique_id=1918075344]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_4ubi6")
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

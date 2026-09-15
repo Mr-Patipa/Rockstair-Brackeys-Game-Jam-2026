@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dnai8gsubyu16"]
 
 [ext_resource type="Texture2D" uid="uid://c88nwnmv1yjg6" path="res://Resources/Art/Background/Brackeys sky clouds v2 sky.png" id="2_ugyqy"]
-[ext_resource type="Shader" uid="uid://bcm0wxs441p1j" path="res://Resources/CloudMovingLoop.gdshader" id="3_4ubi6"]
+[ext_resource type="Shader" uid="uid://bcm0wxs441p1j" path="res://Resources/Shaders/CloudMovingLoop.gdshader" id="3_4ubi6"]
 [ext_resource type="Texture2D" uid="uid://dsftwrx3gqr2w" path="res://Resources/Art/Background/Brackeys sky clouds v2.png" id="3_7efcw"]
 [ext_resource type="Texture2D" uid="uid://vjtghpfl8s42" path="res://Resources/Art/Background/Brackeys sky clouds v2 sun.png" id="4_4ubi6"]
 

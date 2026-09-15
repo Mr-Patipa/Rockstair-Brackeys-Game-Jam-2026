@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://dfti0s8i3sw4l"]
 
+[ext_resource type="Theme" uid="uid://spam7lnwgls4" path="res://Resources/Themes&StyleBox/UI.tres" id="1_3t1jb"]
+[ext_resource type="Texture2D" uid="uid://36bl8be1ct1o" path="res://Resources/Art/Bare UI Layout/Brackey Multiple choice without the interactable components.png" id="2_2s5mn"]
+
 [node name="MultipleChoice" type="Control" unique_id=1727827449]
 layout_mode = 3
 anchors_preset = 15
@@ -7,6 +10,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_3t1jb")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=74407217]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_2s5mn")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=1556267004]
 layout_mode = 1
@@ -15,23 +25,50 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -76.0
-offset_top = -64.0
-offset_right = 76.0
-offset_bottom = 64.0
+offset_left = -551.0
+offset_top = -358.0
+offset_right = 551.0
+offset_bottom = 358.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 50
+theme_override_constants/separation = 200
 
 [node name="Label" type="Label" parent="VBoxContainer2" unique_id=590313894]
+custom_minimum_size = Vector2(1300, 300)
 layout_mode = 2
+size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 48
 text = "MULTIPLE CHOICE QUESTION GOES  HERE"
 horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
-[node name="GridContainer" type="GridContainer" parent="VBoxContainer2" unique_id=1326999927]
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer2" unique_id=1356288019]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer2/MarginContainer" unique_id=1326999927]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_constants/h_separation = 10
-theme_override_constants/v_separation = 10
+theme_override_constants/h_separation = 200
+theme_override_constants/v_separation = 70
 columns = 2
+
+[node name="Option1Button" type="Button" parent="VBoxContainer2/MarginContainer/GridContainer" unique_id=487757268]
+custom_minimum_size = Vector2(800, 200)
+layout_mode = 2
+text = "1st Option"
+
+[node name="Option2Button" type="Button" parent="VBoxContainer2/MarginContainer/GridContainer" unique_id=1915354358]
+custom_minimum_size = Vector2(800, 200)
+layout_mode = 2
+text = "2nd Option"
+
+[node name="Option3Button" type="Button" parent="VBoxContainer2/MarginContainer/GridContainer" unique_id=1574323103]
+custom_minimum_size = Vector2(800, 200)
+layout_mode = 2
+text = "3rd Option"
+
+[node name="Option4Button" type="Button" parent="VBoxContainer2/MarginContainer/GridContainer" unique_id=2045534842]
+custom_minimum_size = Vector2(800, 200)
+layout_mode = 2
+text = "4th Option"

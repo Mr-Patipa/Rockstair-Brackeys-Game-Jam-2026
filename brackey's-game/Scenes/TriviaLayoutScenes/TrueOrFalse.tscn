@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://hn4w8jewj1kx"]
 
+[ext_resource type="Theme" uid="uid://spam7lnwgls4" path="res://Resources/Themes&StyleBox/UI.tres" id="1_wa3fr"]
+[ext_resource type="Texture2D" uid="uid://bmygprpmoiu7f" path="res://Resources/Art/Bare UI Layout/Brackey UI TrueOrFalse without the interactable components.png" id="2_k1hr1"]
+
 [node name="TrueOrFalse" type="Control" unique_id=697201335]
 layout_mode = 3
 anchors_preset = 15
@@ -7,6 +10,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_wa3fr")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=35714364]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_k1hr1")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=154364884]
 layout_mode = 1
@@ -21,25 +31,38 @@ offset_right = 76.0
 offset_bottom = 64.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 50
+theme_override_constants/separation = 170
 
 [node name="Label" type="Label" parent="VBoxContainer2" unique_id=183242991]
+custom_minimum_size = Vector2(1300, 300)
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
 text = "TRUE OR FALSE QUESTION GOES HERE"
 horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer2" unique_id=728655097]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2" unique_id=495468075]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_constants/separation = 10
+theme_override_constants/separation = 65
 
-[node name="TrueButton" type="Button" parent="VBoxContainer2/HBoxContainer" unique_id=61998246]
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer2/VBoxContainer" unique_id=1255266166]
+layout_mode = 2
+theme_override_constants/margin_right = 400
+
+[node name="TrueButton" type="Button" parent="VBoxContainer2/VBoxContainer/MarginContainer" unique_id=61998246]
+custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 text = "TRUE BUTTON
 "
 
-[node name="False Button" type="Button" parent="VBoxContainer2/HBoxContainer" unique_id=1960553295]
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer2/VBoxContainer" unique_id=1316394829]
+layout_mode = 2
+theme_override_constants/margin_left = 400
+
+[node name="False Button" type="Button" parent="VBoxContainer2/VBoxContainer/MarginContainer2" unique_id=1960553295]
+custom_minimum_size = Vector2(800, 200)
 layout_mode = 2
 text = "FALSE BUTTON
 "

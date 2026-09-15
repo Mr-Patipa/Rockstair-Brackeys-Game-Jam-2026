@@ -38,7 +38,140 @@ question = "Are aliens real?"
 AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_23hyt"), SubResource("Resource_7fcjw")])
 metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
 
+[sub_resource type="Resource" id="Resource_ndgcf"]
+script = ExtResource("2_ndgcf")
+AnswerText = "True"
+IsTrue = true
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_mr2yy"]
+script = ExtResource("2_ndgcf")
+AnswerText = "False"
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_p14uv"]
+script = ExtResource("1_fypbb")
+question = "Platypuses are the only mammals that lay eggs. True or false?"
+AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_ndgcf"), SubResource("Resource_mr2yy")])
+metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
+
+[sub_resource type="Resource" id="Resource_63c53"]
+script = ExtResource("2_ndgcf")
+AnswerText = "True"
+IsTrue = true
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_sdoed"]
+script = ExtResource("2_ndgcf")
+AnswerText = "False"
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_tpwmp"]
+script = ExtResource("1_fypbb")
+question = "Cocomelon is the second-most subscribed to YouTube channel, behind MrBeast. True or false?"
+AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_63c53"), SubResource("Resource_sdoed")])
+metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
+
+[sub_resource type="Resource" id="Resource_dr7td"]
+script = ExtResource("2_ndgcf")
+AnswerText = "True"
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_efwpj"]
+script = ExtResource("2_ndgcf")
+AnswerText = "False"
+IsTrue = true
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_i8ady"]
+script = ExtResource("1_fypbb")
+question = "The earth's supply of helium is running low. True or false?"
+AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_dr7td"), SubResource("Resource_efwpj")])
+metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
+
+[sub_resource type="Resource" id="Resource_bxtst"]
+script = ExtResource("2_ndgcf")
+AnswerText = "True"
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_e1els"]
+script = ExtResource("2_ndgcf")
+AnswerText = "False"
+IsTrue = true
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_27fmn"]
+script = ExtResource("1_fypbb")
+question = "The most commonly used password is \"password\". True or false?"
+AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_bxtst"), SubResource("Resource_e1els")])
+metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
+
+[sub_resource type="Resource" id="Resource_mkvjl"]
+script = ExtResource("2_ndgcf")
+AnswerText = "2017"
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_un1o8"]
+script = ExtResource("2_ndgcf")
+AnswerText = "2018"
+IsTrue = true
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_gmavu"]
+script = ExtResource("2_ndgcf")
+AnswerText = "2019"
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_s8cig"]
+script = ExtResource("2_ndgcf")
+AnswerText = "2020"
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_rwt2t"]
+script = ExtResource("1_fypbb")
+question = "In what year did TikTok launch worldwide?"
+AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_mkvjl"), SubResource("Resource_un1o8"), SubResource("Resource_gmavu"), SubResource("Resource_s8cig")])
+metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
+
+[sub_resource type="Resource" id="Resource_7bp0f"]
+script = ExtResource("2_ndgcf")
+AnswerText = "Knife"
+IsTrue = true
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_qt22m"]
+script = ExtResource("2_ndgcf")
+AnswerText = "Club"
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_8u1j8"]
+script = ExtResource("2_ndgcf")
+AnswerText = "Spear"
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_bglhb"]
+script = ExtResource("2_ndgcf")
+AnswerText = "Torch"
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_iws0f"]
+script = ExtResource("1_fypbb")
+question = "What was the first tool Neanderthals invented?"
+AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_7bp0f"), SubResource("Resource_qt22m"), SubResource("Resource_8u1j8"), SubResource("Resource_bglhb")])
+metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
+
+[sub_resource type="Resource" id="Resource_oqbx5"]
+script = ExtResource("2_ndgcf")
+AnswerText = "100-500"
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_yhgi4"]
+script = ExtResource("1_fypbb")
+question = "How many spoken languages are there in the world?"
+AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_oqbx5")])
+metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
+
 [resource]
 script = ExtResource("2_p14uv")
-Questions = Array[ExtResource("1_fypbb")]([SubResource("Resource_4a5p6"), SubResource("Resource_5c1vb")])
+Questions = Array[ExtResource("1_fypbb")]([SubResource("Resource_4a5p6"), SubResource("Resource_5c1vb"), SubResource("Resource_p14uv"), SubResource("Resource_tpwmp"), SubResource("Resource_i8ady"), SubResource("Resource_27fmn"), SubResource("Resource_rwt2t"), SubResource("Resource_iws0f"), SubResource("Resource_yhgi4")])
 metadata/_custom_type_script = "uid://dad7naum5txpl"

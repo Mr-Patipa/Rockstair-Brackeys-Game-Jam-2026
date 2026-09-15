@@ -35,6 +35,15 @@ layout_mode = 1
 z_index = 5
 layout_mode = 1
 
+[node name="OptionButton2" parent="MultipleChoice/VBoxContainer2/GridContainer" parent_id_path=PackedInt32Array(1727827449, 1326999927) index="1" unique_id=807665941 instance=ExtResource("2_vqjxk")]
+layout_mode = 2
+
+[node name="OptionButton3" parent="MultipleChoice/VBoxContainer2/GridContainer" parent_id_path=PackedInt32Array(1727827449, 1326999927) index="2" unique_id=2123822097 instance=ExtResource("2_vqjxk")]
+layout_mode = 2
+
+[node name="OptionButton4" parent="MultipleChoice/VBoxContainer2/GridContainer" parent_id_path=PackedInt32Array(1727827449, 1326999927) index="3" unique_id=1309723414 instance=ExtResource("2_vqjxk")]
+layout_mode = 2
+
 [node name="EndScreen" parent="." unique_id=169754229 instance=ExtResource("6_23hyt")]
 visible = false
 layout_mode = 1

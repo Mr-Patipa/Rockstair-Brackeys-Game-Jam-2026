@@ -1,11 +1,7 @@
 [gd_scene format=3 uid="uid://dfti0s8i3sw4l"]
 
-
 [ext_resource type="Theme" uid="uid://spam7lnwgls4" path="res://Resources/Themes&StyleBox/UI.tres" id="1_3t1jb"]
 [ext_resource type="Texture2D" uid="uid://36bl8be1ct1o" path="res://Resources/Art/Bare UI Layout/Brackey Multiple choice without the interactable components.png" id="2_2s5mn"]
-
-[ext_resource type="PackedScene" uid="uid://byytvnd5yknhr" path="res://Scenes/Assets/option_button.tscn" id="1_d8oor"]
-
 
 [node name="MultipleChoice" type="Control" unique_id=1727827449]
 layout_mode = 3
@@ -57,7 +53,6 @@ theme_override_constants/h_separation = 200
 theme_override_constants/v_separation = 70
 columns = 2
 
-
 [node name="Option1Button" type="Button" parent="VBoxContainer2/MarginContainer/GridContainer" unique_id=487757268]
 custom_minimum_size = Vector2(800, 200)
 layout_mode = 2
@@ -77,7 +72,3 @@ text = "3rd Option"
 custom_minimum_size = Vector2(800, 200)
 layout_mode = 2
 text = "4th Option"
-
-[node name="OptionButton" parent="VBoxContainer2/GridContainer" unique_id=807665941 instance=ExtResource("1_d8oor")]
-layout_mode = 2
-

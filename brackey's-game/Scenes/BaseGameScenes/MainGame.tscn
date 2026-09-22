@@ -7,8 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://byytvnd5yknhr" path="res://Scenes/Assets/option_button.tscn" id="2_vqjxk"]
 [ext_resource type="PackedScene" uid="uid://dnai8gsubyu16" path="res://Scenes/BackgroundScenes/CloudMovingLoop.tscn" id="4_7fcjw"]
 [ext_resource type="PackedScene" uid="uid://b3jbbxj128joe" path="res://Scenes/BaseGameScenes/end_screen.tscn" id="6_23hyt"]
+[ext_resource type="Script" uid="uid://c7aklhfnunr6i" path="res://Scripts/AudioManager/button_sfx.gd" id="7_6mant"]
 
-[node name="MainGame" type="Control" unique_id=2077785845 node_paths=PackedStringArray("Grid", "QuestionLabel", "QuestionScreen", "EndScreen")]
+[node name="MainGame" type="Control" unique_id=2077785845 node_paths=PackedStringArray("Grid", "QuestionLabel", "QuestionScreen", "EndScreen", "option_1_button", "option_2_button", "option_3_button", "option_4_button")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -18,10 +19,14 @@ grow_vertical = 2
 script = ExtResource("1_4821y")
 QuestionList = ExtResource("2_5c1vb")
 OptionsBtn = ExtResource("2_vqjxk")
-Grid = NodePath("MultipleChoice/VBoxContainer2/GridContainer")
+Grid = NodePath("MultipleChoice/VBoxContainer2/MarginContainer/GridContainer")
 QuestionLabel = NodePath("MultipleChoice/VBoxContainer2/Label")
 QuestionScreen = NodePath("MultipleChoice")
 EndScreen = NodePath("EndScreen")
+option_1_button = NodePath("MultipleChoice/VBoxContainer2/MarginContainer/GridContainer/Option1Button")
+option_2_button = NodePath("MultipleChoice/VBoxContainer2/MarginContainer/GridContainer/Option2Button")
+option_3_button = NodePath("MultipleChoice/VBoxContainer2/MarginContainer/GridContainer/Option3Button")
+option_4_button = NodePath("MultipleChoice/VBoxContainer2/MarginContainer/GridContainer/Option4Button")
 
 [node name="Background01" parent="." unique_id=1911135473 instance=ExtResource("4_7fcjw")]
 layout_mode = 0
@@ -35,14 +40,31 @@ layout_mode = 1
 z_index = 5
 layout_mode = 1
 
-[node name="OptionButton2" parent="MultipleChoice/VBoxContainer2/GridContainer" parent_id_path=PackedInt32Array(1727827449, 1326999927) index="1" unique_id=807665941 instance=ExtResource("2_vqjxk")]
-layout_mode = 2
+[node name="Option1Button" parent="MultipleChoice/VBoxContainer2/MarginContainer/GridContainer" parent_id_path=PackedInt32Array(1727827449, 1326999927) index="0" unique_id=487757268]
+script = ExtResource("7_6mant")
 
-[node name="OptionButton3" parent="MultipleChoice/VBoxContainer2/GridContainer" parent_id_path=PackedInt32Array(1727827449, 1326999927) index="2" unique_id=2123822097 instance=ExtResource("2_vqjxk")]
-layout_mode = 2
+[node name="Option2Button" parent="MultipleChoice/VBoxContainer2/MarginContainer/GridContainer" parent_id_path=PackedInt32Array(1727827449, 1326999927) index="1" unique_id=1915354358]
+script = ExtResource("7_6mant")
 
-[node name="OptionButton4" parent="MultipleChoice/VBoxContainer2/GridContainer" parent_id_path=PackedInt32Array(1727827449, 1326999927) index="3" unique_id=1309723414 instance=ExtResource("2_vqjxk")]
-layout_mode = 2
+[node name="Option3Button" parent="MultipleChoice/VBoxContainer2/MarginContainer/GridContainer" parent_id_path=PackedInt32Array(1727827449, 1326999927) index="2" unique_id=1574323103]
+script = ExtResource("7_6mant")
+
+[node name="Option4Button" parent="MultipleChoice/VBoxContainer2/MarginContainer/GridContainer" parent_id_path=PackedInt32Array(1727827449, 1326999927) index="3" unique_id=2045534842]
+script = ExtResource("7_6mant")
+
+[node name="VBoxContainer2_GridContainer#OptionButton" parent="MultipleChoice" index="2" unique_id=807665941]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 240.0
+offset_bottom = 50.0
+grow_horizontal = 1
+grow_vertical = 1
 
 [node name="EndScreen" parent="." unique_id=169754229 instance=ExtResource("6_23hyt")]
 visible = false

@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://cyttakvvvr38w" path="res://Scenes/OverlayScenes/Settings.tscn" id="1_aaj0j"]
 [ext_resource type="Resource" uid="uid://d4h16y8ac2ia2" path="res://Resources/trivia_questions.tres" id="2_5c1vb"]
 [ext_resource type="PackedScene" uid="uid://dfti0s8i3sw4l" path="res://Scenes/TriviaLayoutScenes/MultipleChoice.tscn" id="2_d7xm0"]
-[ext_resource type="PackedScene" uid="uid://byytvnd5yknhr" path="res://Scenes/Assets/option_button.tscn" id="2_vqjxk"]
 [ext_resource type="PackedScene" uid="uid://dnai8gsubyu16" path="res://Scenes/BackgroundScenes/CloudMovingLoop.tscn" id="4_7fcjw"]
 [ext_resource type="PackedScene" uid="uid://b3jbbxj128joe" path="res://Scenes/BaseGameScenes/end_screen.tscn" id="6_23hyt"]
 [ext_resource type="Script" uid="uid://c7aklhfnunr6i" path="res://Scripts/AudioManager/button_sfx.gd" id="7_6mant"]
@@ -18,7 +17,6 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4821y")
 QuestionList = ExtResource("2_5c1vb")
-OptionsBtn = ExtResource("2_vqjxk")
 Grid = NodePath("MultipleChoice/VBoxContainer2/MarginContainer/GridContainer")
 QuestionLabel = NodePath("MultipleChoice/VBoxContainer2/Label")
 QuestionScreen = NodePath("MultipleChoice")
@@ -51,20 +49,6 @@ script = ExtResource("7_6mant")
 
 [node name="Option4Button" parent="MultipleChoice/VBoxContainer2/MarginContainer/GridContainer" parent_id_path=PackedInt32Array(1727827449, 1326999927) index="3" unique_id=2045534842]
 script = ExtResource("7_6mant")
-
-[node name="VBoxContainer2_GridContainer#OptionButton" parent="MultipleChoice" index="2" unique_id=807665941]
-layout_mode = 0
-anchors_preset = 0
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = 0.0
-offset_top = 0.0
-offset_right = 240.0
-offset_bottom = 50.0
-grow_horizontal = 1
-grow_vertical = 1
 
 [node name="EndScreen" parent="." unique_id=169754229 instance=ExtResource("6_23hyt")]
 visible = false

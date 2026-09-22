@@ -2,6 +2,9 @@ extends Control
 
 @export var left_curtain: TextureRect
 @export var right_curtain: TextureRect
+@export var tweenDuration = 0.3
+
+signal curtain_fully_closed
 
 var isClosed : bool = true
 
@@ -10,13 +13,14 @@ func _ready() -> void:
 	curtain_switch()
 
 func change_scene(destination):
-
+	_do_curtain_close()
 	get_tree().change_scene_to_file(destination)
-	pass
+	_do_curtain_open()
 
 func change_ui():
-	# used when changing what appear on screen without explicitly changing scene
-	pass
+	_do_curtain_close()
+	
+	_do_curtain_open()
 
 func curtain_switch():
 	if isClosed == true:
@@ -31,12 +35,14 @@ func _do_curtain_close():
 	var tween = create_tween().set_parallel(true)
 	tween.set_trans(Tween.TRANS_QUAD)
 	tween.set_ease(Tween.EASE_IN_OUT)
-	tween.tween_property(left_curtain, "offset_transform_position_ratio:x", 0, 1.0)
-	tween.tween_property(right_curtain, "offset_transform_position_ratio:x", 0, 1.0)
+	tween.tween_property(left_curtain, "offset_transform_position_ratio:x", 0, tweenDuration)
+	tween.tween_property(right_curtain, "offset_transform_position_ratio:x", 0, tweenDuration)
+	await tween.finished
 
 func _do_curtain_open():
 	var tween = create_tween().set_parallel(true)
 	tween.set_trans(Tween.TRANS_QUAD)
 	tween.set_ease(Tween.EASE_IN_OUT)
-	tween.tween_property(left_curtain, "offset_transform_position_ratio:x", -1280, 1.0)
-	tween.tween_property(right_curtain, "offset_transform_position_ratio:x", 1280, 1.0)
+	tween.tween_property(left_curtain, "offset_transform_position_ratio:x", -1280, tweenDuration)
+	tween.tween_property(right_curtain, "offset_transform_position_ratio:x", 1280, tweenDuration)
+	await tween.finished

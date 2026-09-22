@@ -41,7 +41,8 @@ func Show_Question_Answers() -> void:
 		push_error("Question " + str(CurrentQuestion + 1) + " is neither T/F nor MC")
 		
 func Activate_Button(button: Button, answer):
-	button.pressed.disconnect(Check_Status)
+	if button.pressed.is_connected(Check_Status):
+		button.pressed.disconnect(Check_Status)
 	
 	button.modulate.a = 1.0
 	button.mouse_filter = Control.MOUSE_FILTER_STOP

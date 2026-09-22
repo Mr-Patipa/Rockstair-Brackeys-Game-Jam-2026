@@ -4,57 +4,6 @@
 [ext_resource type="Script" uid="uid://ceoa1j0j55pop" path="res://Resources/answer_class.gd" id="2_ndgcf"]
 [ext_resource type="Script" uid="uid://dad7naum5txpl" path="res://Resources/questions_list.gd" id="2_p14uv"]
 
-[sub_resource type="Resource" id="Resource_bmia4"]
-script = ExtResource("2_ndgcf")
-AnswerText = "Yes"
-IsTrue = true
-metadata/_custom_type_script = "uid://ceoa1j0j55pop"
-
-[sub_resource type="Resource" id="Resource_yfgks"]
-script = ExtResource("2_ndgcf")
-AnswerText = "No"
-metadata/_custom_type_script = "uid://ceoa1j0j55pop"
-
-[sub_resource type="Resource" id="Resource_4a5p6"]
-script = ExtResource("1_fypbb")
-question = "Is the earth flat?"
-AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_bmia4"), SubResource("Resource_yfgks")])
-metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
-
-[sub_resource type="Resource" id="Resource_23hyt"]
-script = ExtResource("2_ndgcf")
-AnswerText = "Yes"
-IsTrue = true
-metadata/_custom_type_script = "uid://ceoa1j0j55pop"
-
-[sub_resource type="Resource" id="Resource_7fcjw"]
-script = ExtResource("2_ndgcf")
-AnswerText = "No"
-metadata/_custom_type_script = "uid://ceoa1j0j55pop"
-
-[sub_resource type="Resource" id="Resource_5c1vb"]
-script = ExtResource("1_fypbb")
-question = "Are aliens real?"
-AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_23hyt"), SubResource("Resource_7fcjw")])
-metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
-
-[sub_resource type="Resource" id="Resource_ndgcf"]
-script = ExtResource("2_ndgcf")
-AnswerText = "True"
-IsTrue = true
-metadata/_custom_type_script = "uid://ceoa1j0j55pop"
-
-[sub_resource type="Resource" id="Resource_mr2yy"]
-script = ExtResource("2_ndgcf")
-AnswerText = "False"
-metadata/_custom_type_script = "uid://ceoa1j0j55pop"
-
-[sub_resource type="Resource" id="Resource_p14uv"]
-script = ExtResource("1_fypbb")
-question = "Platypuses are the only mammals that lay eggs. True or false?"
-AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_ndgcf"), SubResource("Resource_mr2yy")])
-metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
-
 [sub_resource type="Resource" id="Resource_63c53"]
 script = ExtResource("2_ndgcf")
 AnswerText = "True"
@@ -68,25 +17,33 @@ metadata/_custom_type_script = "uid://ceoa1j0j55pop"
 
 [sub_resource type="Resource" id="Resource_tpwmp"]
 script = ExtResource("1_fypbb")
-question = "Cocomelon is the second-most subscribed to YouTube channel, behind MrBeast. True or false?"
+question = "Platypuses are the only mammals that lay eggs. 
+True or false?
+"
 AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_63c53"), SubResource("Resource_sdoed")])
+explanation = "The only species of egg laying mammals is the duck-billed platypus (Ornithorhynchus anatinus).
+"
 metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
 
 [sub_resource type="Resource" id="Resource_dr7td"]
 script = ExtResource("2_ndgcf")
 AnswerText = "True"
+IsTrue = true
 metadata/_custom_type_script = "uid://ceoa1j0j55pop"
 
 [sub_resource type="Resource" id="Resource_efwpj"]
 script = ExtResource("2_ndgcf")
 AnswerText = "False"
-IsTrue = true
 metadata/_custom_type_script = "uid://ceoa1j0j55pop"
 
 [sub_resource type="Resource" id="Resource_i8ady"]
 script = ExtResource("1_fypbb")
-question = "The earth's supply of helium is running low. True or false?"
+question = "Cocomelon is the second-most subscribed to YouTube channel, behind MrBeast. 
+True or false?
+"
 AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_dr7td"), SubResource("Resource_efwpj")])
+explanation = "As of August 2026, Cocomelon - Nursery Rhymes sits at 289m subscribers, behind MrBeast with 515m, followed by T-Series with 267m.
+"
 metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
 
 [sub_resource type="Resource" id="Resource_bxtst"]
@@ -102,76 +59,128 @@ metadata/_custom_type_script = "uid://ceoa1j0j55pop"
 
 [sub_resource type="Resource" id="Resource_27fmn"]
 script = ExtResource("1_fypbb")
-question = "The most commonly used password is \"password\". True or false?"
+question = "The earth's supply of helium is running low. 
+True or false?
+"
 AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_bxtst"), SubResource("Resource_e1els")])
+explanation = "Helium is one of the most common elements in the universe and relatively easy to come by.
+"
 metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
 
 [sub_resource type="Resource" id="Resource_mkvjl"]
 script = ExtResource("2_ndgcf")
-AnswerText = "2017"
+AnswerText = "True"
 metadata/_custom_type_script = "uid://ceoa1j0j55pop"
 
 [sub_resource type="Resource" id="Resource_un1o8"]
+script = ExtResource("2_ndgcf")
+AnswerText = "False"
+IsTrue = true
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_rwt2t"]
+script = ExtResource("1_fypbb")
+question = "The most commonly used password is \"password\". 
+True or false?
+"
+AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_mkvjl"), SubResource("Resource_un1o8")])
+explanation = "According to leaked passwords from data breaches and password manager reports, it's \"admin\".
+"
+metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
+
+[sub_resource type="Resource" id="Resource_s8cig"]
+script = ExtResource("2_ndgcf")
+AnswerText = "2017"
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_iws0f"]
 script = ExtResource("2_ndgcf")
 AnswerText = "2018"
 IsTrue = true
 metadata/_custom_type_script = "uid://ceoa1j0j55pop"
 
-[sub_resource type="Resource" id="Resource_gmavu"]
+[sub_resource type="Resource" id="Resource_7bp0f"]
 script = ExtResource("2_ndgcf")
 AnswerText = "2019"
 metadata/_custom_type_script = "uid://ceoa1j0j55pop"
 
-[sub_resource type="Resource" id="Resource_s8cig"]
+[sub_resource type="Resource" id="Resource_qt22m"]
 script = ExtResource("2_ndgcf")
 AnswerText = "2020"
 metadata/_custom_type_script = "uid://ceoa1j0j55pop"
 
-[sub_resource type="Resource" id="Resource_rwt2t"]
+[sub_resource type="Resource" id="Resource_gmavu"]
 script = ExtResource("1_fypbb")
-question = "In what year did TikTok launch worldwide?"
-AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_mkvjl"), SubResource("Resource_un1o8"), SubResource("Resource_gmavu"), SubResource("Resource_s8cig")])
+question = "In what year did TikTok launch worldwide?
+"
+AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_s8cig"), SubResource("Resource_iws0f"), SubResource("Resource_7bp0f"), SubResource("Resource_qt22m")])
+explanation = "The TikTok app first released in China in 2017, then had its worldwide launch on April 11, 2018.
+"
 metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
 
-[sub_resource type="Resource" id="Resource_7bp0f"]
+[sub_resource type="Resource" id="Resource_bglhb"]
 script = ExtResource("2_ndgcf")
-AnswerText = "Knife"
+AnswerText = "Knife
+"
 IsTrue = true
 metadata/_custom_type_script = "uid://ceoa1j0j55pop"
 
-[sub_resource type="Resource" id="Resource_qt22m"]
+[sub_resource type="Resource" id="Resource_yhgi4"]
 script = ExtResource("2_ndgcf")
 AnswerText = "Club"
 metadata/_custom_type_script = "uid://ceoa1j0j55pop"
 
-[sub_resource type="Resource" id="Resource_8u1j8"]
+[sub_resource type="Resource" id="Resource_oqbx5"]
 script = ExtResource("2_ndgcf")
 AnswerText = "Spear"
 metadata/_custom_type_script = "uid://ceoa1j0j55pop"
 
-[sub_resource type="Resource" id="Resource_bglhb"]
+[sub_resource type="Resource" id="Resource_dlsaq"]
 script = ExtResource("2_ndgcf")
 AnswerText = "Torch"
 metadata/_custom_type_script = "uid://ceoa1j0j55pop"
 
-[sub_resource type="Resource" id="Resource_iws0f"]
+[sub_resource type="Resource" id="Resource_8u1j8"]
 script = ExtResource("1_fypbb")
-question = "What was the first tool Neanderthals invented?"
-AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_7bp0f"), SubResource("Resource_qt22m"), SubResource("Resource_8u1j8"), SubResource("Resource_bglhb")])
+question = "What was the first tool Neanderthals invented?
+"
+AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_bglhb"), SubResource("Resource_yhgi4"), SubResource("Resource_oqbx5"), SubResource("Resource_dlsaq")])
+explanation = "The most ancient discoveries of Neanderthals' tools are small sharp rocks, assumed to be used like knives.
+"
 metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
 
-[sub_resource type="Resource" id="Resource_oqbx5"]
+[sub_resource type="Resource" id="Resource_npnnf"]
 script = ExtResource("2_ndgcf")
 AnswerText = "100-500"
 metadata/_custom_type_script = "uid://ceoa1j0j55pop"
 
-[sub_resource type="Resource" id="Resource_yhgi4"]
+[sub_resource type="Resource" id="Resource_2mjmn"]
+script = ExtResource("2_ndgcf")
+AnswerText = "500-1000 "
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_b7wvp"]
+script = ExtResource("2_ndgcf")
+AnswerText = "1000-2000"
+IsTrue = true
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_12j2s"]
+script = ExtResource("2_ndgcf")
+AnswerText = "2000-3000
+"
+metadata/_custom_type_script = "uid://ceoa1j0j55pop"
+
+[sub_resource type="Resource" id="Resource_f5tyc"]
 script = ExtResource("1_fypbb")
-question = "How many spoken languages are there in the world?"
-AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_oqbx5")])
+question = "How many spoken languages are there in the world?
+"
+AnswerList = Array[ExtResource("2_ndgcf")]([SubResource("Resource_npnnf"), SubResource("Resource_2mjmn"), SubResource("Resource_b7wvp"), SubResource("Resource_12j2s")])
+explanation = "There are around 1300 distinct languages spoken around the globe.
+"
 metadata/_custom_type_script = "uid://dl1ri1hkio8sx"
 
 [resource]
 script = ExtResource("2_p14uv")
-Questions = Array[ExtResource("1_fypbb")]([SubResource("Resource_4a5p6"), SubResource("Resource_5c1vb"), SubResource("Resource_p14uv"), SubResource("Resource_tpwmp"), SubResource("Resource_i8ady"), SubResource("Resource_27fmn"), SubResource("Resource_rwt2t"), SubResource("Resource_iws0f"), SubResource("Resource_yhgi4")])
+Questions = Array[ExtResource("1_fypbb")]([SubResource("Resource_tpwmp"), SubResource("Resource_i8ady"), SubResource("Resource_27fmn"), SubResource("Resource_rwt2t"), SubResource("Resource_gmavu"), SubResource("Resource_8u1j8"), SubResource("Resource_f5tyc")])
 metadata/_custom_type_script = "uid://dad7naum5txpl"

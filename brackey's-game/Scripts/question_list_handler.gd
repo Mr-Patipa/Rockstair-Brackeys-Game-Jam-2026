@@ -19,7 +19,6 @@ var CurrentQuestion : int = 0 :
 
 func _ready() -> void:
 	Show_Question_Answers()
-	GlobalSignalBus.on_answer_chosen.connect(Check_Status)
 
 func Show_Question_Answers() -> void:
 	var current_q = QuestionList.Questions[CurrentQuestion]
@@ -58,8 +57,12 @@ func Check_Status(answer) -> void:
 	print(answer)
 	
 	if CurrentQuestion + 1 <= QuestionList.Questions.size() - 1:
+		await ScreenTransition.curtain_switch()
 		CurrentQuestion += 1
+		await ScreenTransition.curtain_switch()
 	
 	else:
+		await ScreenTransition.curtain_switch()
 		QuestionScreen.visible = false
 		EndScreen.visible = true
+		await ScreenTransition.curtain_switch()

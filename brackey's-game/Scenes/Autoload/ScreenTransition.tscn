@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://q12mrjq6iy6u" path="res://Resources/Art/Curtains/Brackeys red curtain right.png" id="3_ju4if"]
 
 [node name="ScreenTransition" type="Control" unique_id=961100991 node_paths=PackedStringArray("left_curtain", "right_curtain")]
+z_index = 100
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

@@ -7,8 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://dnai8gsubyu16" path="res://Scenes/BackgroundScenes/CloudMovingLoop.tscn" id="4_7fcjw"]
 [ext_resource type="PackedScene" uid="uid://b3jbbxj128joe" path="res://Scenes/BaseGameScenes/end_screen.tscn" id="6_23hyt"]
 [ext_resource type="Script" uid="uid://c7aklhfnunr6i" path="res://Scripts/AudioManager/button_sfx.gd" id="7_6mant"]
+[ext_resource type="PackedScene" uid="uid://pjtl2a0kxtac" path="res://Scenes/BaseGameScenes/RightOrWrongScreen.tscn" id="8_6mant"]
 
-[node name="MainGame" type="Control" unique_id=2077785845 node_paths=PackedStringArray("Grid", "QuestionLabel", "QuestionScreen", "EndScreen", "option_1_button", "option_2_button", "option_3_button", "option_4_button")]
+[node name="MainGame" type="Control" unique_id=2077785845 node_paths=PackedStringArray("Grid", "QuestionLabel", "QuestionScreen", "EndScreen", "end_texture", "right_or_wrong_screen", "explanation", "right", "wrong", "option_1_button", "option_2_button", "option_3_button", "option_4_button")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -21,6 +22,11 @@ Grid = NodePath("MultipleChoice/VBoxContainer2/MarginContainer/GridContainer")
 QuestionLabel = NodePath("MultipleChoice/VBoxContainer2/Label")
 QuestionScreen = NodePath("MultipleChoice")
 EndScreen = NodePath("EndScreen")
+end_texture = NodePath("EndScreen/EndTexture")
+right_or_wrong_screen = NodePath("RightOrWrongScreen")
+explanation = NodePath("RightOrWrongScreen/Explanation")
+right = NodePath("RightOrWrongScreen/RIGHT")
+wrong = NodePath("RightOrWrongScreen/WRONG")
 option_1_button = NodePath("MultipleChoice/VBoxContainer2/MarginContainer/GridContainer/Option1Button")
 option_2_button = NodePath("MultipleChoice/VBoxContainer2/MarginContainer/GridContainer/Option2Button")
 option_3_button = NodePath("MultipleChoice/VBoxContainer2/MarginContainer/GridContainer/Option3Button")
@@ -54,4 +60,15 @@ script = ExtResource("7_6mant")
 visible = false
 layout_mode = 1
 
+[node name="RightOrWrongScreen" parent="." unique_id=336421567 instance=ExtResource("8_6mant")]
+visible = false
+z_index = 10
+layout_mode = 1
+
+[connection signal="gui_input" from="EndScreen/EndTexture" to="." method="_on_end_screen_gui_input"]
+[connection signal="gui_input" from="RightOrWrongScreen/RIGHT" to="." method="_on_explanation_gui_input"]
+[connection signal="gui_input" from="RightOrWrongScreen/WRONG" to="." method="_on_explanation_gui_input"]
+
 [editable path="MultipleChoice"]
+[editable path="EndScreen"]
+[editable path="RightOrWrongScreen"]

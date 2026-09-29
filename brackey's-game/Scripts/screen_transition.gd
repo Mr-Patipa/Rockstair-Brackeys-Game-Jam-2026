@@ -15,10 +15,10 @@ func change_scene(destination):
 	get_tree().change_scene_to_file(destination)
 	await _do_curtain_open()
 
-func change_ui():
-	_do_curtain_close()
-	
-	_do_curtain_open()
+#func change_ui():
+	#_do_curtain_close()
+	#
+	#_do_curtain_open()
 
 func curtain_switch():
 	if isClosed == true:
